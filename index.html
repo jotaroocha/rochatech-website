@@ -1,0 +1,770 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Primary SEO -->
+  <title>RochaTech | TI Gerenciada e Suporte Proativo (MSP)</title>
+  <meta name="description"
+        content="RochaTech: TI gerenciada com proatividade e resposta rápida a incidentes. Suporte, Redes, Firewall e Backup com SLA. Base em Florianópolis/SC e atendimento em todo o Brasil." />
+  <meta name="robots" content="index,follow,max-image-preview:large" />
+  <link rel="canonical" href="https://www.rochatech.net.br/" />
+  <meta name="theme-color" content="#07070A" />
+
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:title" content="RochaTech | TI Gerenciada e Suporte Proativo" />
+  <meta property="og:description"
+        content="TI gerenciada com proatividade e resposta rápida a incidentes. Base em Florianópolis/SC e atendimento em todo o Brasil." />
+  <meta property="og:url" content="https://www.rochatech.net.br/" />
+  <meta property="og:image" content="https://www.rochatech.net.br/assets/images/logo.png" />
+  <meta name="twitter:card" content="summary" />
+
+  <!-- Icons -->
+  <link rel="icon" type="image/png" href="https://www.rochatech.net.br/assets/images/logo.png" />
+  <link rel="apple-touch-icon" href="https://www.rochatech.net.br/assets/images/logo.png" />
+
+  <!-- Performance hints -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" as="image" href="https://www.rochatech.net.br/assets/images/logo.png" imagesrcset="https://www.rochatech.net.br/assets/images/logo.png" />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Cinzel:wght@500;700&family=Orbitron:wght@500;700&display=swap"
+    rel="stylesheet" />
+
+  <!-- Structured Data (SEO) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "RochaTech",
+    "url": "https://www.rochatech.net.br/",
+    "logo": "https://www.rochatech.net.br/assets/images/logo.png",
+    "image": "https://www.rochatech.net.br/assets/images/logo.png",
+    "description": "TI gerenciada com proatividade e resposta rápida a incidentes. Suporte, Redes, Firewall e Backup com SLA.",
+    "areaServed": { "@type": "Country", "name": "Brasil" },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Florianópolis",
+      "addressRegion": "SC",
+      "addressCountry": "BR"
+    },
+    "email": "comercial@rochatech.net.br",
+    "telephone": "+55 41 98715-1231"
+  }
+  </script>
+
+  <style>
+    @font-face {
+      font-family: "Nasalization";
+      src: url("assets/fonts/Nasalization.woff2") format("woff2");
+      font-display: swap;
+    }
+    @font-face {
+      font-family: "EngraversGothic BT";
+      src: url("assets/fonts/EngraversGothicBT.woff2") format("woff2");
+      font-display: swap;
+    }
+
+    :root{
+      --bg:#07070A;
+      --card:#0F1015;
+      --card2:#12131A;
+      --text:#F4F4F6;
+      --muted:#B6B7BD;
+      --line:rgba(244,244,246,.10);
+
+      --gold:#DAAA49;
+      --gold2:#B9821A;
+      --goldLine:rgba(218,170,73,.28);
+
+      --shadow:0 12px 30px rgba(0,0,0,.45);
+      --radius:14px;
+
+      --max:1100px;
+      --pad:clamp(16px, 3vw, 22px);
+
+      --font-title:"Nasalization","Orbitron",system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+      --font-sub:"EngraversGothic BT","Cinzel",Georgia,"Times New Roman",serif;
+      --font-body:"Roboto",system-ui,-apple-system,Segoe UI,Helvetica,Arial,sans-serif;
+    }
+
+    *{ box-sizing:border-box; }
+    html{ scroll-behavior:smooth; }
+    body{
+      margin:0;
+      font-family:var(--font-body);
+      color:var(--text);
+      background:
+        radial-gradient(1100px 650px at 12% -10%, rgba(218,170,73,.16), transparent 55%),
+        radial-gradient(900px 600px at 90% 0%, rgba(218,170,73,.10), transparent 55%),
+        radial-gradient(900px 600px at 70% 120%, rgba(218,170,73,.08), transparent 55%),
+        var(--bg);
+      line-height:1.5;
+      text-rendering:optimizeLegibility;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+    }
+
+    img{ max-width:100%; height:auto; display:block; }
+    a{ color:inherit; text-decoration:none; }
+
+    .skip-link{
+      position:absolute; left:-9999px; top:12px;
+      background:rgba(18,19,26,.95);
+      border:1px solid var(--goldLine);
+      color:var(--text);
+      padding:10px 12px;
+      border-radius:10px;
+      z-index:9999;
+    }
+    .skip-link:focus{ left:12px; }
+
+    :focus-visible{
+      outline:2px solid rgba(218,170,73,.70);
+      outline-offset:3px;
+      border-radius:10px;
+    }
+
+    .wrap{ max-width:var(--max); margin:0 auto; padding:0 var(--pad); }
+
+    .topbar{
+      position:sticky; top:0; z-index:10;
+      -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(10px);
+      background:rgba(7,7,10,.72);
+      border-bottom:1px solid var(--line);
+    }
+
+    .nav{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      padding:14px 0;
+      gap:14px;
+    }
+
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      font-weight:700;
+      letter-spacing:.2px;
+      min-width:0;
+    }
+    .brand > span{ font-family:var(--font-title); min-width:0; }
+    .brand small{
+      display:block;
+      color:var(--muted);
+      font-weight:600;
+      letter-spacing:.12px;
+      font-family:var(--font-sub);
+      text-transform:uppercase;
+      font-size:11px;
+      margin-top:2px;
+      white-space:nowrap;
+      overflow:hidden;
+      text-overflow:ellipsis;
+      max-width: min(48vw, 520px);
+    }
+
+    .logoImg{
+      width:64px;
+      height:64px;
+      border-radius:14px;
+      object-fit:contain;
+      background:rgba(218,170,73,.06);
+      border:1px solid rgba(218,170,73,.28);
+      box-shadow:var(--shadow);
+      padding:8px;
+      flex:0 0 auto;
+    }
+
+    .menu{
+      display:flex;
+      gap:14px;
+      flex-wrap:wrap;
+      align-items:center;
+      justify-content:flex-end;
+    }
+    .menu a{
+      color:var(--muted);
+      font-weight:700;
+      letter-spacing:.08px;
+    }
+    .menu a:hover{ color:var(--text); }
+
+    .navToggle{
+      display:none;
+      align-items:center;
+      justify-content:center;
+      padding:10px 12px;
+      border-radius:12px;
+      border:1px solid var(--line);
+      background:rgba(255,255,255,.04);
+      color:var(--text);
+      font-weight:900;
+      letter-spacing:.08px;
+      cursor:pointer;
+      white-space:nowrap;
+    }
+    .navToggle:hover{ border-color:rgba(218,170,73,.22); background:rgba(255,255,255,.06); }
+
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      padding:11px 14px;
+      border-radius:12px;
+      border:1px solid var(--line);
+      background:rgba(255,255,255,.04);
+      color:var(--text);
+      font-weight:800;
+      gap:10px;
+      transition: transform .08s ease, background .2s ease, border-color .2s ease;
+      white-space:nowrap;
+      letter-spacing:.06px;
+    }
+    .btn:hover{ background:rgba(255,255,255,.06); border-color:rgba(218,170,73,.22); }
+    .btn:active{ transform:translateY(1px); }
+    .btn.primary{
+      border-color:rgba(218,170,73,.50);
+      background:linear-gradient(135deg, rgba(218,170,73,.22), rgba(185,130,26,.16));
+      box-shadow:0 10px 28px rgba(0,0,0,.40);
+    }
+    .btn.primary:hover{
+      background:linear-gradient(135deg, rgba(218,170,73,.28), rgba(185,130,26,.20));
+      border-color:rgba(218,170,73,.62);
+    }
+
+    .hero{ padding:44px 0 10px; }
+    .heroGrid{
+      display:grid;
+      grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr);
+      gap:18px;
+      align-items:stretch;
+    }
+
+    .panel{
+      border:1px solid rgba(244,244,246,.10);
+      background:rgba(15,16,21,.70);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      overflow:hidden;
+      min-width:0;
+    }
+    .heroMain{ padding:28px; }
+    .heroSide{ padding:18px; }
+
+    .kicker{
+      display:inline-flex;
+      gap:10px;
+      align-items:center;
+      color:var(--muted);
+      font-weight:800;
+      letter-spacing:.14px;
+      border:1px solid var(--goldLine);
+      background:rgba(218,170,73,.08);
+      padding:8px 12px;
+      border-radius:999px;
+      font-family:var(--font-sub);
+      text-transform:uppercase;
+      font-size:12px;
+    }
+
+    h1{
+      margin:14px 0 10px;
+      font-size:clamp(26px, 3.2vw, 44px);
+      line-height:1.08;
+      font-family:var(--font-title);
+      letter-spacing:.2px;
+    }
+    .sub{
+      color:var(--muted);
+      font-size:clamp(15px, 1.4vw, 18px);
+      margin:0 0 18px;
+    }
+    .sub strong{ color:var(--text); }
+
+    .ctaRow{
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+      margin-top:10px;
+    }
+
+    .badges{
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+      margin-top:16px;
+    }
+    .badge{
+      color:var(--muted);
+      font-weight:800;
+      font-size:13px;
+      border:1px solid rgba(218,170,73,.22);
+      background:rgba(218,170,73,.06);
+      padding:8px 10px;
+      border-radius:999px;
+    }
+
+    .sideTitle{
+      font-weight:900;
+      margin:6px 0 10px;
+      font-family:var(--font-sub);
+      text-transform:uppercase;
+      letter-spacing:.16px;
+      color:var(--text);
+    }
+    .checklist{
+      margin:0;
+      padding-left:18px;
+      color:var(--muted);
+    }
+    .checklist li{ margin:8px 0; }
+
+    .section{ padding:26px 0; }
+    .section h2{
+      margin:0 0 12px;
+      font-size:22px;
+      font-family:var(--font-title);
+      letter-spacing:.2px;
+    }
+    .muted{ color:var(--muted); }
+
+    .grid3{
+      display:grid;
+      gap:12px;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    }
+    .steps{
+      display:grid;
+      gap:12px;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    }
+    .plans{
+      display:grid;
+      gap:12px;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      align-items:stretch;
+    }
+
+    .card{
+      padding:16px;
+      border:1px solid rgba(244,244,246,.10);
+      background:rgba(18,19,26,.70);
+      border-radius:var(--radius);
+    }
+    .card h3{
+      margin:0 0 6px;
+      font-size:16px;
+      font-family:var(--font-sub);
+      text-transform:uppercase;
+      letter-spacing:.14px;
+      color:var(--text);
+    }
+    .card p{ margin:0; color:var(--muted); }
+
+    .stepNum{
+      width:32px; height:32px;
+      border-radius:10px;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      font-weight:900;
+      background:rgba(218,170,73,.10);
+      border:1px solid rgba(218,170,73,.32);
+      margin-bottom:8px;
+      color:var(--text);
+    }
+
+    .plan{
+      padding:18px;
+      border:1px solid rgba(244,244,246,.10);
+      background:rgba(18,19,26,.70);
+      border-radius:var(--radius);
+      display:flex;
+      flex-direction:column;
+      gap:10px;
+      min-width:0;
+    }
+    .plan strong{
+      font-size:16px;
+      font-family:var(--font-sub);
+      text-transform:uppercase;
+      letter-spacing:.14px;
+    }
+    .plan ul{
+      margin:0;
+      padding-left:18px;
+      color:var(--muted);
+    }
+    .plan li{ margin:7px 0; }
+    .plan .btn{ margin-top:auto; }
+
+    .footer{
+      padding:26px 0 40px;
+      border-top:1px solid rgba(244,244,246,.10);
+      margin-top:10px;
+    }
+    .footerGrid{
+      display:grid;
+      gap:12px;
+      grid-template-columns: minmax(0, 1.2fr) minmax(0, .8fr);
+      align-items:start;
+    }
+    .small{ font-size:13px; color:var(--muted); }
+
+    .contactBox{
+      padding:14px;
+      border:1px solid rgba(244,244,246,.10);
+      background:rgba(18,19,26,.70);
+      border-radius:var(--radius);
+    }
+    .contactBox a{
+      display:block;
+      padding:6px 0;
+      color:var(--text);
+      font-weight:800;
+      word-break:break-word;
+    }
+    .contactBox span{ color:var(--muted); font-weight:600; }
+
+    /* "Em construção" */
+    .pending{
+      display:block;
+      padding:6px 0;
+      color:var(--text);
+      font-weight:800;
+    }
+
+    #servicos, #como, #planos, #contato { scroll-margin-top: 96px; }
+
+    @media (max-width: 980px){
+      .heroGrid{ grid-template-columns: 1fr; }
+      .footerGrid{ grid-template-columns: 1fr; }
+    }
+    @media (max-width: 860px){
+      .navToggle{ display:inline-flex; }
+      .menu{
+        display:none;
+        position:absolute;
+        right: var(--pad);
+        top: 82px;
+        flex-direction:column;
+        align-items:flex-start;
+        gap:10px;
+        padding:12px;
+        border-radius:14px;
+        border:1px solid rgba(244,244,246,.12);
+        background: rgba(18,19,26,.96);
+        box-shadow: var(--shadow);
+        min-width: min(84vw, 320px);
+      }
+      .menu.open{ display:flex; }
+      .menu a{ padding:8px 10px; border-radius:10px; width:100%; }
+      .menu a:hover{ background: rgba(255,255,255,.06); }
+      .logoImg{ width:58px; height:58px; padding:8px; }
+    }
+    @media (max-width: 420px){
+      .logoImg{ width:52px; height:52px; padding:7px; border-radius:12px; }
+      .brand small{ max-width: 62vw; }
+      .btn{ width:100%; }
+      .ctaRow{ gap:8px; }
+    }
+    @media (prefers-reduced-motion: reduce){
+      html{ scroll-behavior:auto; }
+      .btn{ transition:none; }
+    }
+  </style>
+</head>
+
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <!-- Topo -->
+  <header class="topbar" role="banner">
+    <div class="wrap">
+      <div class="nav">
+        <a class="brand" href="#topo" aria-label="Ir para o topo">
+          <img class="logoImg"
+               src="https://www.rochatech.net.br/assets/images/logo.png"
+               alt="Logo RochaTech"
+               loading="eager"
+               fetchpriority="high" />
+          <span>
+            RochaTech
+            <small>TI Gerenciada • Proatividade • Resposta rápida</small>
+          </span>
+        </a>
+
+        <button class="navToggle" id="navToggle" type="button"
+                aria-controls="primary-menu" aria-expanded="false">
+          Menu
+        </button>
+
+        <nav class="menu" id="primary-menu" aria-label="Menu principal">
+          <a href="#servicos">Serviços</a>
+          <a href="#como">Como funciona</a>
+          <a href="#planos">Planos</a>
+          <a href="#contato">Contato</a>
+        </nav>
+
+        <!-- WhatsApp com número real -->
+        <a class="btn primary"
+           href="https://wa.me/5541987151231?text=Ol%C3%A1!%20Quero%20um%20diagn%C3%B3stico%20inicial%20gratuito%20de%20TI%20para%20minha%20empresa."
+           target="_blank" rel="noopener"
+           aria-label="Chamar no WhatsApp">
+          WhatsApp
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <!-- Hero -->
+    <section class="hero" id="topo" aria-label="Apresentação">
+      <div class="wrap">
+        <div class="heroGrid">
+          <div class="panel heroMain">
+            <div class="kicker">MSP • TI Gerenciada para PMEs</div>
+            <h1>TI proativa com resposta rápida a incidentes.</h1>
+            <p class="sub">
+              <strong>Proatividade e resposta rápida a incidentes.</strong>
+              Suporte, Redes, Firewall e Backup com SLA para empresas de <strong>1 a 100 usuários</strong>.
+            </p>
+
+            <div class="ctaRow">
+              <a class="btn primary"
+                 href="https://wa.me/5541987151231?text=Quero%20agendar%20o%20diagn%C3%B3stico%20inicial%20gratuito%20de%20TI.%20Quando%20podemos%20falar%3F"
+                 target="_blank" rel="noopener">
+                Agendar diagnóstico gratuito
+              </a>
+              <a class="btn" href="#planos">Ver planos</a>
+            </div>
+
+            <div class="badges" aria-label="Diferenciais">
+              <div class="badge">Proatividade (monitoramento)</div>
+              <div class="badge">Resposta rápida a incidentes</div>
+              <div class="badge">SLA & atendimento ágil</div>
+              <div class="badge">Backup com verificação</div>
+              <div class="badge">Firewall/VPN gerenciados</div>
+            </div>
+          </div>
+
+          <aside class="panel heroSide" aria-label="Diagnóstico inicial gratuito">
+            <div class="sideTitle">Diagnóstico inicial gratuito</div>
+            <ul class="checklist">
+              <li>Checagem de backup + riscos de ransomware</li>
+              <li>Firewall/roteador, Wi-Fi e pontos de falha</li>
+              <li>Atualizações, antivírus e contas administrativas</li>
+              <li>Inventário básico (PCs/servidores/rede)</li>
+              <li>Plano de ação “Top 5” prioridades</li>
+            </ul>
+
+            <div style="height:12px"></div>
+
+            <div class="ctaRow" style="margin-top:0">
+              <a class="btn primary"
+                 href="https://wa.me/5541987151231?text=Ol%C3%A1!%20Quero%20o%20diagn%C3%B3stico%20inicial%20gratuito%20de%20TI.%20Podemos%20agendar%3F"
+                 target="_blank" rel="noopener">
+                WhatsApp
+              </a>
+
+              <a class="btn"
+                 href="mailto:comercial@rochatech.net.br?subject=Diagn%C3%B3stico%20inicial%20gratuito%20de%20TI&body=Ol%C3%A1!%20Quero%20o%20diagn%C3%B3stico%20inicial%20gratuito.%0A%0AEmpresa:%20%0AQtde%20usu%C3%A1rios:%20%0AMelhor%20hor%C3%A1rio:%20">
+                E-mail
+              </a>
+            </div>
+
+            <p class="small" style="margin:10px 0 0">
+              Atendemos <strong>todo o Brasil</strong> • Base em <strong>Florianópolis/SC</strong>
+            </p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Serviços -->
+    <section class="section" id="servicos" aria-label="Serviços">
+      <div class="wrap">
+        <h2>Serviços</h2>
+        <p class="muted">Contrato mensal (recorrência) + projetos sob demanda.</p>
+
+        <div class="grid3" role="list">
+          <div class="card" role="listitem">
+            <h3>Suporte & Incidentes</h3>
+            <p>Resposta rápida a incidentes, atendimento remoto/presencial e padronização para reduzir recorrência.</p>
+          </div>
+          <div class="card" role="listitem">
+            <h3>Redes & Wi-Fi</h3>
+            <p>Rede estável, segmentação, Wi-Fi corporativo e melhoria de performance.</p>
+          </div>
+          <div class="card" role="listitem">
+            <h3>Firewall & VPN</h3>
+            <p>Regras, VPN, políticas básicas de segurança e revisão periódica.</p>
+          </div>
+          <div class="card" role="listitem">
+            <h3>Backup & Continuidade</h3>
+            <p>Rotina, alertas, verificação e testes de restauração (conforme plano).</p>
+          </div>
+          <div class="card" role="listitem">
+            <h3>Infra & Servidores</h3>
+            <p>Windows/Linux, virtualização, storage, inventário e boas práticas.</p>
+          </div>
+          <div class="card" role="listitem">
+            <h3>Consultoria</h3>
+            <p>Plano de melhorias, roadmap e projetos: M365, migrações e upgrades.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Como funciona -->
+    <section class="section" id="como" aria-label="Como funciona">
+      <div class="wrap">
+        <h2>Como funciona</h2>
+        <div class="steps">
+          <div class="card">
+            <div class="stepNum">1</div>
+            <h3>Diagnóstico</h3>
+            <p class="muted">Mapeamos riscos e prioridades (backup, rede, segurança e operação).</p>
+          </div>
+          <div class="card">
+            <div class="stepNum">2</div>
+            <h3>Onboarding</h3>
+            <p class="muted">Padronização, documentação mínima e implantação do plano contratado.</p>
+          </div>
+          <div class="card">
+            <div class="stepNum">3</div>
+            <h3>Proatividade + Incidentes</h3>
+            <p class="muted">Monitoramento e prevenção para reduzir chamados — e resposta rápida a incidentes com SLA e comunicação clara.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Planos -->
+    <section class="section" id="planos" aria-label="Planos">
+      <div class="wrap">
+        <h2>Planos de TI Gerenciada</h2>
+        <p class="muted">Sem preço público no começo (você fecha conforme tamanho/criticidade).</p>
+
+        <div class="plans">
+          <div class="plan">
+            <strong>Essencial</strong>
+            <div class="muted">Para começar e organizar a casa.</div>
+            <ul>
+              <li>Suporte remoto (horário comercial)</li>
+              <li>Rotina de atualizações (patch)</li>
+              <li>Checklist preventivo mensal</li>
+              <li>Inventário básico</li>
+            </ul>
+            <a class="btn"
+               href="https://wa.me/5541987151231?text=Quero%20um%20or%C3%A7amento%20do%20Plano%20Essencial.%20Temos%20X%20usu%C3%A1rios."
+               target="_blank" rel="noopener">Pedir orçamento</a>
+          </div>
+
+          <div class="plan">
+            <strong>Segurança</strong>
+            <div class="muted">Para reduzir risco e proteger a operação.</div>
+            <ul>
+              <li>Tudo do Essencial</li>
+              <li>Firewall/VPN gerenciado</li>
+              <li>Backup gerenciado com alertas</li>
+              <li>Boas práticas (MFA/políticas básicas)</li>
+            </ul>
+            <a class="btn primary"
+               href="https://wa.me/5541987151231?text=Quero%20um%20or%C3%A7amento%20do%20Plano%20Seguran%C3%A7a.%20Temos%20X%20usu%C3%A1rios."
+               target="_blank" rel="noopener">Pedir orçamento</a>
+          </div>
+
+          <div class="plan">
+            <strong>Premium</strong>
+            <div class="muted">Para quem precisa de continuidade e SLA melhor.</div>
+            <ul>
+              <li>Tudo do Segurança</li>
+              <li>Teste de restauração (mensal/trimestral)</li>
+              <li>Relatório executivo</li>
+              <li>SLA melhor + visitas preventivas</li>
+            </ul>
+            <a class="btn"
+               href="https://wa.me/5541987151231?text=Quero%20um%20or%C3%A7amento%20do%20Plano%20Premium.%20Temos%20X%20usu%C3%A1rios."
+               target="_blank" rel="noopener">Pedir orçamento</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Rodapé / Contato -->
+    <footer class="footer" id="contato" aria-label="Contato">
+      <div class="wrap">
+        <div class="footerGrid">
+          <div>
+            <h2 style="margin:0 0 8px">RochaTech</h2>
+            <p class="muted" style="margin:0 0 12px">
+              TI Gerenciada para pequenas empresas: suporte, redes, firewall e backup com <strong>proatividade</strong>
+              e <strong>resposta rápida a incidentes</strong>. Atendimento remoto para todo o Brasil.
+            </p>
+            <p class="small">
+              © <span id="year"></span> RochaTech • Base em Florianópolis/SC • Atendimento Brasil
+            </p>
+          </div>
+
+          <address class="contactBox" style="font-style: normal;">
+            <a href="https://wa.me/5541987151231" target="_blank" rel="noopener">
+              WhatsApp <span>— +55 41 98715-1231</span>
+            </a>
+            <a href="mailto:comercial@rochatech.net.br">
+              E-mail <span>— comercial@rochatech.net.br</span>
+            </a>
+
+            <!-- Instagram pendente -->
+            <div class="pending">
+              Instagram <span style="color: var(--muted); font-weight: 600;">— Em construção</span>
+            </div>
+          </address>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    // Ano no rodapé
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Menu mobile (acessível)
+    const btn = document.getElementById("navToggle");
+    const menu = document.getElementById("primary-menu");
+
+    function setMenu(open) {
+      menu.classList.toggle("open", open);
+      btn.setAttribute("aria-expanded", String(open));
+    }
+
+    if (btn && menu) {
+      btn.addEventListener("click", () => setMenu(!menu.classList.contains("open")));
+
+      // Fecha ao clicar em um item
+      menu.querySelectorAll("a").forEach(a => {
+        a.addEventListener("click", () => setMenu(false));
+      });
+
+      // Fecha ao clicar fora
+      document.addEventListener("click", (e) => {
+        const isClickInside = menu.contains(e.target) || btn.contains(e.target);
+        if (!isClickInside) setMenu(false);
+      });
+
+      // Fecha com ESC
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") setMenu(false);
+      });
+    }
+  </script>
+</body>
+</html>
