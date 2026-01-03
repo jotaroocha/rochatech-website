@@ -1,0 +1,1021 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Primary SEO -->
+  <title>RochaTech | TI Gerenciada e Suporte Proativo (MSP)</title>
+  <meta name="description"
+        content="RochaTech: TI gerenciada com proatividade e resposta rápida a incidentes. Suporte, Redes, Firewall e Backup com SLA. Base em Florianópolis/SC e atendimento em todo o Brasil." />
+  <meta name="robots" content="index,follow,max-image-preview:large" />
+  <link rel="canonical" href="https://www.rochatech.net.br/" />
+  <meta name="theme-color" content="#07070A" />
+
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:title" content="RochaTech | TI Gerenciada e Suporte Proativo (MSP)" />
+  <meta property="og:description"
+        content="TI gerenciada com proatividade e resposta rápida a incidentes. Suporte, Redes, Firewall e Backup com SLA." />
+  <meta property="og:url" content="https://www.rochatech.net.br/" />
+  <meta property="og:image" content="https://www.rochatech.net.br/assets/images/logo.png" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="RochaTech | TI Gerenciada e Suporte Proativo" />
+  <meta name="twitter:description" content="TI gerenciada com proatividade e resposta rápida a incidentes. Suporte, Redes, Firewall e Backup com SLA." />
+  <meta name="twitter:image" content="https://www.rochatech.net.br/assets/images/logo.png" />
+
+  <link rel="icon" href="assets/images/favicon.svg" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Cinzel:wght@500;700&family=Orbitron:wght@500;700&display=swap"
+        rel="stylesheet" />
+
+  <!-- Structured Data (SEO) -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "RochaTech",
+  "url": "https://www.rochatech.net.br/",
+  "logo": "https://www.rochatech.net.br/assets/images/logo.png",
+  "image": "https://www.rochatech.net.br/assets/images/logo.png",
+  "description": "TI gerenciada com proatividade e resposta rápida a incidentes. Suporte, Redes, Firewall e Backup com SLA.",
+  "areaServed": { "@type": "Country", "name": "Brasil" },
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Florianópolis",
+    "addressRegion": "SC",
+    "addressCountry": "BR"
+  },
+  "email": "comercial@rochatech.net.br",
+  "telephone": "+55 41 98715-1231",
+  "sameAs": ["https://www.instagram.com/rochatech.net.br/"]
+}
+  </script>
+
+  <style>
+    :root{
+      --bg:#07070A;
+      --text:#F4F4F6;
+      --muted:#B6B7BD;
+      --line:rgba(244,244,246,.10);
+
+      --gold:#DAAA49;
+      --goldLine:rgba(218,170,73,.28);
+
+      --shadow:0 12px 30px rgba(0,0,0,.45);
+      --radius:14px;
+
+      --max:1100px;
+      --pad:clamp(16px, 3vw, 22px);
+
+      --font-title:"Orbitron",system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+      --font-body:"Roboto",system-ui,-apple-system,Segoe UI,Arial,sans-serif;
+
+      /* >>> Ajuste fino do "minimalismo" do embed */
+      --ig-slide-w: 360px;   /* largura de cada item no desktop */
+      --ig-slide-w-sm: 300px;/* largura no mobile */
+      --ig-max-h: 420px;     /* altura máxima (corta o embed pra ficar discreto) */
+    }
+
+    *{ box-sizing:border-box; }
+    html{ scroll-behavior:smooth; }
+    body{
+      margin:0;
+      font-family:var(--font-body);
+      background:
+        radial-gradient(1200px 700px at 50% -10%, rgba(218,170,73,.12), transparent 60%),
+        radial-gradient(900px 600px at 10% 20%, rgba(218,170,73,.08), transparent 55%),
+        var(--bg);
+      color:var(--text);
+      line-height:1.45;
+    }
+    a{ color:inherit; text-decoration:none; }
+
+    .skip-link{
+      position:absolute; left:-9999px; top:12px;
+      background:rgba(18,19,26,.95);
+      border:1px solid var(--goldLine);
+      color:var(--text);
+      padding:10px 12px;
+      border-radius:10px;
+      z-index:9999;
+    }
+    .skip-link:focus{ left:12px; }
+
+    :focus-visible{
+      outline:2px solid rgba(218,170,73,.75);
+      outline-offset:3px;
+      border-radius:10px;
+    }
+
+    .wrap{
+      width:min(var(--max), calc(100% - (var(--pad) * 2)));
+      margin-inline:auto;
+    }
+
+    /* Topbar */
+    .topbar{
+      position:sticky;
+      top:0;
+      z-index:50;
+      backdrop-filter: blur(12px);
+      background:rgba(7,7,10,.62);
+      border-bottom:1px solid rgba(244,244,246,.08);
+    }
+    .nav{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:14px;
+      padding:14px 0;
+    }
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      min-width:0;
+      font-family: var(--font-title);
+      letter-spacing:.4px;
+    }
+
+    /* ✅ FIX LOGO: não estica nem comprime */
+    .logoImg{
+      height:44px;         /* mantém altura fixa no header */
+      width:auto;          /* largura automática preserva proporção */
+      max-width:160px;     /* evita logo gigante em logos horizontais */
+      display:block;
+      object-fit:contain;  /* garante que nunca distorce */
+      object-position:center;
+      border-radius:12px;
+      border:1px solid var(--goldLine);
+      background:rgba(218,170,73,.06);
+      padding:4px;         /* dá respiro caso a logo tenha transparência */
+    }
+
+    .brand span{
+      display:flex;
+      flex-direction:column;
+      gap:2px;
+      min-width:0;
+    }
+    .brand span small{
+      font-size:12px;
+      color:var(--muted);
+      font-family:var(--font-body);
+      white-space:nowrap;
+      overflow:hidden;
+      text-overflow:ellipsis;
+    }
+
+    .menu{
+      display:flex;
+      align-items:center;
+      gap:18px;
+      font-weight:700;
+      color:rgba(244,244,246,.9);
+      font-family: var(--font-body);
+    }
+    .menu a{
+      opacity:.92;
+      padding:8px 10px;
+      border-radius:12px;
+      transition: background .2s ease, opacity .2s ease;
+    }
+    .menu a:hover{
+      opacity:1;
+      background:rgba(255,255,255,.06);
+    }
+
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      padding:11px 14px;
+      border-radius:12px;
+      border:1px solid var(--line);
+      background:rgba(255,255,255,.04);
+      color:var(--text);
+      font-weight:800;
+      gap:10px;
+      transition: transform .08s ease, background .2s ease, border-color .2s ease;
+      white-space:nowrap;
+      letter-spacing:.06px;
+      font-family: var(--font-body);
+    }
+    .btn:hover{ background:rgba(255,255,255,.07); border-color:rgba(244,244,246,.18); }
+    .btn:active{ transform: translateY(1px); }
+    .btn.primary{
+      border-color: rgba(218,170,73,.40);
+      background: linear-gradient(180deg, rgba(218,170,73,.16), rgba(218,170,73,.06));
+      box-shadow: 0 10px 25px rgba(218,170,73,.16);
+    }
+    .btn.primary:hover{
+      border-color: rgba(218,170,73,.55);
+      background: linear-gradient(180deg, rgba(218,170,73,.20), rgba(218,170,73,.07));
+    }
+
+    /* Mobile menu */
+    .navToggle{
+      display:none;
+      width:44px;
+      height:44px;
+      border-radius:12px;
+      border:1px solid rgba(244,244,246,.14);
+      background: rgba(255,255,255,.04);
+      color:var(--text);
+      font-size:18px;
+    }
+    @media (max-width: 860px){
+      .menu{
+        position: fixed;
+        top: 70px;
+        right: calc(var(--pad));
+        width: min(280px, calc(100% - (var(--pad) * 2)));
+        background: rgba(18,19,26,.96);
+        border: 1px solid rgba(244,244,246,.12);
+        border-radius: 16px;
+        padding: 10px;
+        box-shadow: var(--shadow);
+        display:none;
+        flex-direction:column;
+        align-items:stretch;
+      }
+      .menu.open{ display:flex; }
+      .menu a{ padding: 12px 12px; }
+      .navToggle{ display:inline-flex; align-items:center; justify-content:center; }
+    }
+
+    /* Sections */
+    .section{ padding:26px 0; }
+    .section h2{
+      margin:0 0 12px;
+      font-size:22px;
+      font-family:var(--font-title);
+      letter-spacing:.2px;
+    }
+    .muted{ color:var(--muted); }
+
+    .panel{
+      border:1px solid rgba(244,244,246,.10);
+      background:rgba(15,16,21,.70);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      overflow:hidden;
+      min-width:0;
+    }
+
+    /* Hero */
+    .hero{ padding: 30px 0 22px; }
+    .heroGrid{
+      display:grid;
+      grid-template-columns: 1.3fr .7fr;
+      gap:14px;
+      align-items:stretch;
+    }
+    @media (max-width: 900px){
+      .heroGrid{ grid-template-columns: 1fr; }
+    }
+    .heroMain{
+      padding:22px;
+      position:relative;
+      isolation:isolate;
+    }
+    .heroMain::before{
+      content:"";
+      position:absolute;
+      inset:-1px;
+      border-radius:var(--radius);
+      background:
+        radial-gradient(650px 420px at 15% 10%, rgba(218,170,73,.22), transparent 60%),
+        radial-gradient(520px 380px at 85% 30%, rgba(218,170,73,.10), transparent 55%);
+      opacity:.9;
+      z-index:-1;
+    }
+    .kicker{
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      padding:8px 10px;
+      border:1px solid rgba(218,170,73,.35);
+      border-radius:999px;
+      background: rgba(218,170,73,.08);
+      color: rgba(244,244,246,.95);
+      font-weight:900;
+      letter-spacing:.3px;
+      text-transform:uppercase;
+      font-size:12px;
+      font-family: var(--font-body);
+    }
+    h1{
+      margin:12px 0 10px;
+      font-family:var(--font-title);
+      letter-spacing:.2px;
+      font-size:32px;
+      line-height:1.15;
+    }
+    .sub{
+      margin:0 0 16px;
+      color: var(--muted);
+      font-size:15px;
+    }
+    .ctaRow{
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+      align-items:center;
+    }
+    .badgeRow{
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+      margin-top:14px;
+    }
+    .badge{
+      padding:9px 10px;
+      border-radius:999px;
+      border:1px solid rgba(244,244,246,.12);
+      background:rgba(255,255,255,.04);
+      color:rgba(244,244,246,.92);
+      font-weight:800;
+      font-size:12px;
+      font-family: var(--font-body);
+    }
+
+    /* Side panel */
+    .heroSide{
+      padding:18px;
+      display:flex;
+      flex-direction:column;
+      gap:12px;
+    }
+    .heroSide h2{
+      margin:0 0 6px;
+      font-size:16px;
+      font-family:var(--font-title);
+      letter-spacing:.2px;
+    }
+    .heroSide p{
+      margin:0;
+      color:var(--muted);
+      font-size:13px;
+    }
+    .heroSide .callout{
+      border:1px solid rgba(218,170,73,.25);
+      background: rgba(218,170,73,.06);
+      padding:12px;
+      border-radius:14px;
+    }
+
+    .grid3{
+      display:grid;
+      gap:12px;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    }
+    .steps{
+      display:grid;
+      gap:12px;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      align-items:stretch;
+    }
+    .card{
+      padding:16px;
+      border:1px solid rgba(244,244,246,.10);
+      background:rgba(18,19,26,.70);
+      border-radius:var(--radius);
+    }
+    .card h3{
+      margin:0 0 6px;
+      font-size:16px;
+      font-family:var(--font-title);
+      letter-spacing:.2px;
+    }
+    .card p{
+      margin:0;
+      color:var(--muted);
+      font-size:14px;
+    }
+
+    .planWrap{
+      display:grid;
+      gap:12px;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      align-items:stretch;
+    }
+    .plan{
+      padding:18px;
+      border:1px solid rgba(244,244,246,.10);
+      background:rgba(18,19,26,.70);
+      border-radius:var(--radius);
+      display:flex;
+      flex-direction:column;
+      gap:10px;
+      position:relative;
+      overflow:hidden;
+    }
+    .plan strong{
+      font-family:var(--font-title);
+      letter-spacing:.2px;
+      font-size:18px;
+    }
+    .plan ul{
+      margin:0;
+      padding-left:18px;
+      color:var(--muted);
+    }
+    .plan li{ margin:6px 0; }
+
+    .pill{
+      display:inline-flex;
+      width:34px;
+      height:34px;
+      border-radius:10px;
+      align-items:center;
+      justify-content:center;
+      font-weight:900;
+      background:rgba(218,170,73,.10);
+      border:1px solid rgba(218,170,73,.32);
+      margin-bottom:8px;
+      color:var(--text);
+      font-family: var(--font-body);
+    }
+
+    /* Footer */
+    .footer{
+      padding: 22px 0 30px;
+      border-top:1px solid rgba(244,244,246,.08);
+      background: rgba(10,10,14,.55);
+    }
+    .footerGrid{
+      display:grid;
+      gap:14px;
+      grid-template-columns: 1.2fr .8fr;
+      align-items:start;
+    }
+    @media (max-width: 900px){
+      .footerGrid{ grid-template-columns: 1fr; }
+    }
+    .contactBox{
+      padding:14px;
+      border-radius:var(--radius);
+      border:1px solid rgba(244,244,246,.10);
+      background: rgba(18,19,26,.70);
+    }
+    .contactBox a{
+      display:block;
+      padding:10px 0;
+      border-bottom:1px dashed rgba(244,244,246,.10);
+      font-weight:800;
+    }
+    .contactBox a:last-child{ border-bottom:none; }
+    .contactBox span{ color:var(--muted); font-weight:600; }
+    .small{ font-size:13px; color:var(--muted); }
+
+    /* ============================
+       Instagram - Carrossel com blockquote (embed oficial)
+       ============================ */
+    .igHeader{
+      display:flex;
+      align-items:flex-end;
+      justify-content:space-between;
+      gap:12px;
+      flex-wrap:wrap;
+      margin-bottom:10px;
+    }
+
+    .igCarousel{
+      position:relative;
+      border:1px solid rgba(244,244,246,.10);
+      background:rgba(18,19,26,.60);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+    }
+
+    .igTrack{
+      display:flex;
+      gap:12px;
+      overflow-x:auto;
+      scroll-snap-type:x mandatory;
+      padding:12px;
+      -webkit-overflow-scrolling:touch;
+      scrollbar-width: thin;
+      scrollbar-color: rgba(218,170,73,.45) rgba(255,255,255,.06);
+    }
+    .igTrack::-webkit-scrollbar{ height:10px; }
+    .igTrack::-webkit-scrollbar-track{ background: rgba(255,255,255,.06); border-radius:999px; }
+    .igTrack::-webkit-scrollbar-thumb{ background: rgba(218,170,73,.45); border-radius:999px; }
+
+    .igSlide{
+      flex: 0 0 var(--ig-slide-w);
+      scroll-snap-align:start;
+      border-radius: 16px;
+      border:1px solid rgba(244,244,246,.10);
+      background: rgba(15,16,21,.55);
+      overflow:hidden;
+      position:relative;
+      box-shadow: 0 10px 25px rgba(0,0,0,.25);
+      max-height: var(--ig-max-h); /* <<< mantém minimalista */
+    }
+    @media (max-width: 520px){
+      .igSlide{ flex-basis: min(var(--ig-slide-w-sm), 85vw); }
+    }
+
+    /* Fade discreto no fim (indica que está “cortado”) */
+    .igSlide::after{
+      content:"";
+      position:absolute;
+      left:0; right:0; bottom:0;
+      height:64px;
+      background: linear-gradient(to bottom, rgba(7,7,10,0), rgba(7,7,10,.78));
+      pointer-events:none;
+    }
+
+    /* Domando o embed do Instagram (mesmo que você cole o blockquote enorme) */
+    .igSlide blockquote.instagram-media{
+      margin:0 !important;
+      width:100% !important;
+      max-width:100% !important;
+      min-width:0 !important;
+
+      /* neutraliza o estilo inline “gigante” */
+      background: transparent !important;
+      border:0 !important;
+      border-radius:0 !important;
+      box-shadow:none !important;
+    }
+
+    /* iframe gerado pelo embed.js */
+    .igSlide iframe{
+      width:100% !important;
+      border:0 !important;
+      border-radius:0 !important;
+      background: transparent !important;
+    }
+
+    .igNav{
+      position:absolute;
+      top:50%;
+      transform: translateY(-50%);
+      width:44px;
+      height:44px;
+      border-radius: 14px;
+      border:1px solid rgba(244,244,246,.14);
+      background: rgba(7,7,10,.55);
+      color: var(--text);
+      display:none;
+      align-items:center;
+      justify-content:center;
+      cursor:pointer;
+      z-index:2;
+    }
+    .igNav:hover{ border-color: rgba(218,170,73,.40); }
+    .igNav:active{ transform: translateY(-50%) translateY(1px); }
+
+    @media (min-width: 860px){
+      .igNav{ display:inline-flex; }
+      .igNav.prev{ left:10px; }
+      .igNav.next{ right:10px; }
+    }
+
+    .igHint{ margin-top:10px; font-size:13px; color: var(--muted); }
+    .igEmpty{
+      border:1px dashed rgba(244,244,246,.18);
+      background:rgba(18,19,26,.45);
+      border-radius:var(--radius);
+      padding:14px;
+      color:var(--muted);
+      margin-top:10px;
+    }
+    .igEmpty code{
+      color:var(--text);
+      background:rgba(255,255,255,.06);
+      padding:2px 6px;
+      border-radius:8px;
+      border:1px solid rgba(244,244,246,.12);
+    }
+  </style>
+</head>
+
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <!-- Topo -->
+  <header class="topbar" role="banner">
+    <div class="wrap">
+      <div class="nav">
+        <a class="brand" href="#topo" aria-label="Ir para o topo">
+          <img class="logoImg"
+               src="https://www.rochatech.net.br/assets/images/logo.png"
+               alt="Logo RochaTech"
+               loading="eager"
+               fetchpriority="high" />
+          <span>
+            RochaTech
+            <small>TI Gerenciada • Proatividade • Resposta rápida</small>
+          </span>
+        </a>
+
+        <button class="navToggle" id="navToggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="primary-menu">
+          ☰
+        </button>
+
+        <nav class="menu" id="primary-menu" aria-label="Menu principal">
+          <a href="#servicos">Serviços</a>
+          <a href="#como">Como funciona</a>
+          <a href="#planos">Planos</a>
+          <a href="#instagram">Instagram</a>
+          <a href="#contato">Contato</a>
+        </nav>
+
+        <a class="btn primary"
+           href="https://wa.me/5541987151231?text=Ol%C3%A1!%20Quero%20um%20diagn%C3%B3stico%20inicial%20gratuito%20de%20TI%20para%20minha%20empresa."
+           target="_blank" rel="noopener"
+           aria-label="Chamar no WhatsApp">
+          WhatsApp
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="conteudo">
+
+    <!-- Hero -->
+    <section class="hero" id="topo" aria-label="Apresentação">
+      <div class="wrap">
+        <div class="heroGrid">
+          <div class="panel heroMain">
+            <div class="kicker">MSP • TI Gerenciada para PMEs</div>
+            <h1>TI proativa com resposta rápida a incidentes.</h1>
+            <p class="sub">
+              <strong>Proatividade e resposta rápida a incidentes.</strong>
+              Suporte, Redes, Firewall e Backup com SLA para empresas de <strong>1 a 100 usuários</strong>.
+            </p>
+
+            <div class="ctaRow">
+              <a class="btn primary"
+                 href="https://wa.me/5541987151231?text=Ol%C3%A1!%20Quero%20um%20diagn%C3%B3stico%20inicial%20gratuito%20de%20TI%20para%20minha%20empresa."
+                 target="_blank" rel="noopener">
+                Diagnóstico gratuito
+              </a>
+              <a class="btn" href="#planos">Ver planos</a>
+              <a class="btn" href="#servicos">O que fazemos</a>
+            </div>
+
+            <div class="badgeRow" aria-label="Destaques">
+              <div class="badge">SLA e padronização</div>
+              <div class="badge">Atendimento Brasil</div>
+              <div class="badge">Foco em segurança</div>
+            </div>
+          </div>
+
+          <aside class="panel heroSide" aria-label="Diferenciais">
+            <div>
+              <h2>O que você ganha</h2>
+              <p>Menos incidentes, mais previsibilidade e segurança para o seu negócio.</p>
+            </div>
+
+            <div class="callout">
+              <h2>Proatividade</h2>
+              <p>Monitoramento, rotina e melhorias contínuas para evitar recorrência.</p>
+            </div>
+
+            <div class="callout">
+              <h2>Resposta rápida</h2>
+              <p>Prioridade para incidentes críticos e comunicação clara.</p>
+            </div>
+
+            <div class="callout">
+              <h2>Segurança</h2>
+              <p>MFA, boas práticas, firewall/VPN e backup conforme plano.</p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Serviços -->
+    <section class="section" id="servicos" aria-label="Serviços">
+      <div class="wrap">
+        <h2>Serviços</h2>
+        <p class="muted">Contrato mensal (recorrência) + projetos sob demanda.</p>
+
+        <div class="grid3" role="list">
+          <div class="card" role="listitem">
+            <h3>Suporte & Incidentes</h3>
+            <p>Resposta rápida a incidentes, atendimento remoto/presencial e padronização para reduzir recorrência.</p>
+          </div>
+          <div class="card" role="listitem">
+            <h3>Redes & Wi-Fi</h3>
+            <p>Rede estável, segmentação, Wi-Fi corporativo e melhoria de performance.</p>
+          </div>
+          <div class="card" role="listitem">
+            <h3>Firewall & VPN</h3>
+            <p>Gestão e boas práticas para acesso remoto seguro e proteção de perímetro.</p>
+          </div>
+          <div class="card" role="listitem">
+            <h3>Backup & Continuidade</h3>
+            <p>Rotina, alertas, verificação e testes de restauração (conforme plano).</p>
+          </div>
+          <div class="card" role="listitem">
+            <h3>Infra & Servidores</h3>
+            <p>Windows/Linux, virtualização, storage, inventário e boas práticas.</p>
+          </div>
+          <div class="card" role="listitem">
+            <h3>Consultoria</h3>
+            <p>Plano de melhorias, roadmap e projetos: M365, migrações e upgrades.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Como funciona -->
+    <section class="section" id="como" aria-label="Como funciona">
+      <div class="wrap">
+        <h2>Como funciona</h2>
+        <p class="muted">Um processo simples para organizar e estabilizar sua TI.</p>
+
+        <div class="steps">
+          <div class="card">
+            <div class="pill">1</div>
+            <h3>Diagnóstico</h3>
+            <p>Levantamento de ambiente, dores e prioridades. Inventário e riscos principais.</p>
+          </div>
+
+          <div class="card">
+            <div class="pill">2</div>
+            <h3>Padronização</h3>
+            <p>Boas práticas, organização de acesso, documentação e ajustes rápidos para reduzir incidentes.</p>
+          </div>
+
+          <div class="card">
+            <div class="pill">3</div>
+            <h3>Proatividade</h3>
+            <p>Rotina de monitoramento, prevenção, atualizações e melhoria contínua conforme plano.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Planos -->
+    <section class="section" id="planos" aria-label="Planos">
+      <div class="wrap">
+        <h2>Planos</h2>
+        <p class="muted">Planos mensais por recorrência. Ajustamos conforme seu ambiente e necessidade.</p>
+
+        <div class="planWrap">
+          <div class="plan">
+            <strong>Essencial</strong>
+            <div class="muted">Para quem precisa organizar e estabilizar a TI.</div>
+            <ul>
+              <li>Suporte e chamados</li>
+              <li>Padronização básica</li>
+              <li>Inventário + documentação</li>
+              <li>Rotina preventiva</li>
+            </ul>
+            <a class="btn"
+               href="https://wa.me/5541987151231?text=Quero%20um%20or%C3%A7amento%20do%20Plano%20Essencial.%20Temos%20X%20usu%C3%A1rios."
+               target="_blank" rel="noopener">Pedir orçamento</a>
+          </div>
+
+          <div class="plan">
+            <strong>Segurança</strong>
+            <div class="muted">Foco em proteção e continuidade. Ideal para quem quer blindar a operação.</div>
+            <ul>
+              <li>Tudo do Essencial</li>
+              <li>Firewall/VPN gerenciado</li>
+              <li>Backup gerenciado com alertas</li>
+              <li>Boas práticas (MFA/políticas básicas)</li>
+            </ul>
+            <a class="btn primary"
+               href="https://wa.me/5541987151231?text=Quero%20um%20or%C3%A7amento%20do%20Plano%20Seguran%C3%A7a.%20Temos%20X%20usu%C3%A1rios."
+               target="_blank" rel="noopener">Pedir orçamento</a>
+          </div>
+
+          <div class="plan">
+            <strong>Premium</strong>
+            <div class="muted">Para quem precisa de continuidade e SLA melhor.</div>
+            <ul>
+              <li>Tudo do Segurança</li>
+              <li>Teste de restauração (mensal/trimestral)</li>
+              <li>Relatório executivo</li>
+              <li>SLA melhor + visitas preventivas</li>
+            </ul>
+            <a class="btn"
+               href="https://wa.me/5541987151231?text=Quero%20um%20or%C3%A7amento%20do%20Plano%20Premium.%20Temos%20X%20usu%C3%A1rios."
+               target="_blank" rel="noopener">Pedir orçamento</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Instagram (blockquote carousel) -->
+    <section class="section" id="instagram" aria-label="Instagram">
+      <div class="wrap">
+        <div class="igHeader">
+          <div>
+            <h2>Instagram</h2>
+          </div>
+        </div>
+
+        <div class="igCarousel" aria-roledescription="carousel" aria-label="Carrossel de publicações do Instagram">
+          <button class="igNav prev" type="button" aria-label="Voltar" id="igPrev">‹</button>
+
+          <div class="igTrack" id="igTrack" tabindex="0" aria-label="Lista de publicações">
+
+            <!-- ✅ COMO ADICIONAR: duplique um bloco igSlide e cole seu <blockquote> dentro -->
+            <!-- Você pode colar o blockquote “curto” (recomendado): -->
+            <div class="igSlide">
+              <blockquote class="instagram-media"
+                data-instgrm-permalink="https://www.instagram.com/p/DS6sW2CjQfI/"
+                data-instgrm-version="14">
+              </blockquote>
+            </div>
+
+            <!-- OU colar o blockquote “completo” do Instagram (aquele enorme) também funciona:
+                 (evite colar o <script> junto — o script deve ficar só uma vez no final da página) -->
+
+            <!-- Exemplo de segundo item (troque pelo seu post): -->
+            <div class="igSlide">
+              <blockquote class="instagram-media"
+                data-instgrm-permalink="https://www.instagram.com/p/DTBiiAMke2O/"
+                data-instgrm-version="14">
+              </blockquote>
+            </div>
+
+          </div>
+
+          <button class="igNav next" type="button" aria-label="Avançar" id="igNext">›</button>
+        </div>
+
+        <div class="igHint">Backstage, boas práticas e novidades de TI.</div>
+
+        <noscript>
+          <p class="muted">Para ver as publicações, acesse o perfil no Instagram.</p>
+        </noscript>
+      </div>
+    </section>
+
+    <!-- Rodapé / Contato -->
+    <footer class="footer" id="contato" aria-label="Contato">
+      <div class="wrap">
+        <div class="footerGrid">
+          <div>
+            <h2 style="margin:0 0 8px; font-family: var(--font-title);">RochaTech</h2>
+            <p class="muted" style="margin:0 0 12px">
+              TI Gerenciada para pequenas empresas: suporte, redes, firewall e backup com <strong>proatividade</strong>
+              e <strong>resposta rápida a incidentes</strong>. Atendimento remoto para todo o Brasil.
+            </p>
+            <p class="small">
+              © <span id="year"></span> RochaTech • Base em Florianópolis/SC • Atendimento Brasil
+            </p>
+          </div>
+
+          <address class="contactBox" style="font-style: normal;">
+            <a href="https://wa.me/5541987151231" target="_blank" rel="noopener">
+              WhatsApp <span>— +55 41 98715-1231</span>
+            </a>
+            <a href="mailto:comercial@rochatech.net.br">
+              E-mail <span>— comercial@rochatech.net.br</span>
+            </a>
+            <a href="https://www.instagram.com/rochatech.net.br/" target="_blank" rel="noopener me">
+              Instagram <span>— @rochatech.net.br</span>
+            </a>
+          </address>
+        </div>
+      </div>
+    </footer>
+
+  </main>
+
+  <script>
+    // Ano no rodapé
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Menu mobile (acessível)
+    const btn = document.getElementById("navToggle");
+    const menu = document.getElementById("primary-menu");
+
+    function setMenu(open) {
+      menu.classList.toggle("open", open);
+      btn.setAttribute("aria-expanded", String(open));
+    }
+
+    if (btn && menu) {
+      btn.addEventListener("click", () => setMenu(!menu.classList.contains("open")));
+      menu.querySelectorAll("a").forEach((a) => a.addEventListener("click", () => setMenu(false)));
+
+      document.addEventListener("click", (e) => {
+        const isClickInside = menu.contains(e.target) || btn.contains(e.target);
+        if (!isClickInside) setMenu(false);
+      });
+
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") setMenu(false);
+      });
+    }
+
+    /* ============================
+       Instagram: carrossel + embed.js (processa blockquotes)
+       ============================ */
+
+    // Troque pelo seu @ (sem @)
+    const instagramUsername = "rochatech.net.br";
+
+    // Atualiza links placeholder do perfil (menu/rodapé/botão)
+    function setInstagramProfileLink() {
+      if (!instagramUsername || instagramUsername === "rochatech.net.br") return;
+
+      const profileUrl = `https://www.instagram.com/${instagramUsername}/`;
+      const igProfileBtn = document.getElementById("igProfileBtn");
+      if (igProfileBtn) igProfileBtn.href = profileUrl;
+
+      document.querySelectorAll('a[href="https://www.instagram.com/rochatech.net.br/"]').forEach(a => {
+        a.href = profileUrl;
+      });
+
+      // Atualiza JSON-LD sameAs
+      const ld = document.querySelector('script[type="application/ld+json"]');
+      if (ld) {
+        try {
+          const data = JSON.parse(ld.textContent);
+          const sameAs = Array.isArray(data.sameAs) ? data.sameAs : [];
+          const cleaned = sameAs.filter(x => typeof x === "string" && !x.includes("instagram.com/rochatech.net.br"));
+          cleaned.push(profileUrl);
+          data.sameAs = cleaned;
+          ld.textContent = JSON.stringify(data, null, 2);
+        } catch (_) {}
+      }
+    }
+
+    // Carrossel (scroll-snap)
+    const igTrack = document.getElementById("igTrack");
+    const igPrev = document.getElementById("igPrev");
+    const igNext = document.getElementById("igNext");
+    const igSection = document.getElementById("instagram");
+
+    function scrollCarousel(dir) {
+      if (!igTrack) return;
+      const amount = Math.max(260, Math.round(igTrack.clientWidth * 0.85));
+      igTrack.scrollBy({ left: dir * amount, behavior: "smooth" });
+    }
+
+    if (igPrev) igPrev.addEventListener("click", () => scrollCarousel(-1));
+    if (igNext) igNext.addEventListener("click", () => scrollCarousel(1));
+
+    if (igTrack) {
+      igTrack.addEventListener("keydown", (e) => {
+        if (e.key === "ArrowLeft") scrollCarousel(-1);
+        if (e.key === "ArrowRight") scrollCarousel(1);
+      });
+    }
+
+    // Lazy-load do script do Instagram (melhor performance)
+    function loadInstagramEmbedScript() {
+      if (window.__igEmbedLoading) return window.__igEmbedLoading;
+
+      window.__igEmbedLoading = new Promise((resolve, reject) => {
+        // Se já existe, apenas processa
+        if (window.instgrm && window.instgrm.Embeds && window.instgrm.Embeds.process) {
+          window.instgrm.Embeds.process();
+          resolve();
+          return;
+        }
+
+        const s = document.createElement("script");
+        s.async = true;
+        s.src = "https://www.instagram.com/embed.js";
+        s.onload = () => {
+          try {
+            window.instgrm?.Embeds?.process?.();
+          } catch (_) {}
+          resolve();
+        };
+        s.onerror = reject;
+        document.body.appendChild(s);
+      });
+
+      return window.__igEmbedLoading;
+    }
+
+    // Init
+    setInstagramProfileLink();
+
+    // Só carrega o embed.js quando a seção estiver próxima (evita pesar o carregamento do site)
+    if (igSection) {
+      const io = new IntersectionObserver((entries) => {
+        if (entries.some(e => e.isIntersecting)) {
+          loadInstagramEmbedScript();
+          io.disconnect();
+        }
+      }, { root: null, rootMargin: "300px 0px", threshold: 0.01 });
+
+      io.observe(igSection);
+    }
+  </script>
+</body>
+</html>
