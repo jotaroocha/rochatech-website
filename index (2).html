@@ -1,0 +1,1622 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QCKTZ08TTL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-QCKTZ08TTL');
+  </script>
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Primary SEO -->
+  <title>RochaTech | TI Gerenciada e Suporte Proativo (MSP)</title>
+  <meta name="description"
+    content="RochaTech: TI gerenciada com proatividade e resposta rápida a incidentes. Suporte, Redes, Firewall e Backup com SLA. Base em Florianópolis/SC e atendimento em todo o Brasil." />
+  <meta name="robots" content="index,follow,max-image-preview:large" />
+  <link rel="canonical" href="https://www.rochatech.net.br/" />
+  <meta name="theme-color" content="#07070A" />
+
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:title" content="RochaTech | TI Gerenciada e Suporte Proativo (MSP)" />
+  <meta property="og:description"
+    content="TI gerenciada com proatividade e resposta rápida a incidentes. Suporte, Redes, Firewall e Backup com SLA." />
+  <meta property="og:url" content="https://www.rochatech.net.br/" />
+  <meta property="og:image" content="https://www.rochatech.net.br/assets/images/logo.png" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="RochaTech | TI Gerenciada e Suporte Proativo" />
+  <meta name="twitter:description"
+    content="TI gerenciada com proatividade e resposta rápida a incidentes. Suporte, Redes, Firewall e Backup com SLA." />
+  <meta name="twitter:image" content="https://www.rochatech.net.br/assets/images/logo.png" />
+
+  <link rel="icon" href="assets/images/favicon.svg" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Cinzel:wght@500;700&family=Orbitron:wght@500;700&display=swap"
+    rel="stylesheet" />
+
+  <!-- Structured Data (SEO) -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "RochaTech",
+  "url": "https://www.rochatech.net.br/",
+  "logo": "https://www.rochatech.net.br/assets/images/logo.png",
+  "image": "https://www.rochatech.net.br/assets/images/logo.png",
+  "description": "TI gerenciada com proatividade e resposta rápida a incidentes. Suporte, Redes, Firewall e Backup com SLA.",
+  "areaServed": { "@type": "Country", "name": "Brasil" },
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Florianópolis",
+    "addressRegion": "SC",
+    "addressCountry": "BR"
+  },
+  "email": "comercial@rochatech.net.br",
+  "telephone": "+55 41 98715-1231",
+  "sameAs": ["https://www.instagram.com/rochatech.net.br/"]
+}
+  </script>
+
+  <style>
+    :root {
+      --bg: #07070A;
+      --text: #F4F4F6;
+      --muted: #B6B7BD;
+      --line: rgba(244, 244, 246, .10);
+
+      --gold: #DAAA49;
+      --goldLine: rgba(218, 170, 73, .28);
+
+      --shadow: 0 12px 30px rgba(0, 0, 0, .45);
+      --radius: 14px;
+
+      --max: 1100px;
+      --pad: clamp(16px, 3vw, 22px);
+
+      --font-title: "Orbitron", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      --font-body: "Roboto", system-ui, -apple-system, Segoe UI, Arial, sans-serif;
+
+      /* >>> Ajuste fino do "minimalismo" do embed */
+      --ig-slide-w: 360px;
+      /* largura de cada item no desktop */
+      --ig-slide-w-sm: 300px;
+      /* largura no mobile */
+      --ig-max-h: 420px;
+      /* altura máxima (corta o embed pra ficar discreto) */
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: var(--font-body);
+      background:
+        radial-gradient(1200px 700px at 50% -10%, rgba(218, 170, 73, .12), transparent 60%),
+        radial-gradient(900px 600px at 10% 20%, rgba(218, 170, 73, .08), transparent 55%),
+        var(--bg);
+      color: var(--text);
+      line-height: 1.45;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .skip-link {
+      position: absolute;
+      left: -9999px;
+      top: 12px;
+      background: rgba(18, 19, 26, .95);
+      border: 1px solid var(--goldLine);
+      color: var(--text);
+      padding: 10px 12px;
+      border-radius: 10px;
+      z-index: 9999;
+    }
+
+    .skip-link:focus {
+      left: 12px;
+    }
+
+    :focus-visible {
+      outline: 2px solid rgba(218, 170, 73, .75);
+      outline-offset: 3px;
+      border-radius: 10px;
+    }
+
+    .wrap {
+      width: min(var(--max), calc(100% - (var(--pad) * 2)));
+      margin-inline: auto;
+    }
+
+    /* Topbar */
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(12px);
+      background: rgba(7, 7, 10, .62);
+      border-bottom: 1px solid rgba(244, 244, 246, .08);
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      padding: 14px 0;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      min-width: 0;
+      font-family: var(--font-title);
+      letter-spacing: .4px;
+    }
+
+    /* ✅ FIX LOGO: não estica nem comprime */
+    .logoImg {
+      height: 44px;
+      /* mantém altura fixa no header */
+      width: auto;
+      /* largura automática preserva proporção */
+      max-width: 160px;
+      /* evita logo gigante em logos horizontais */
+      display: block;
+      object-fit: contain;
+      /* garante que nunca distorce */
+      object-position: center;
+      border-radius: 12px;
+      border: 1px solid var(--goldLine);
+      background: rgba(218, 170, 73, .06);
+      padding: 4px;
+      /* dá respiro caso a logo tenha transparência */
+    }
+
+    .brand span {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      min-width: 0;
+    }
+
+    .brand span small {
+      font-size: 12px;
+      color: var(--muted);
+      font-family: var(--font-body);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .menu {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      font-weight: 700;
+      color: rgba(244, 244, 246, .9);
+      font-family: var(--font-body);
+    }
+
+    .menu a {
+      opacity: .92;
+      padding: 8px 10px;
+      border-radius: 12px;
+      transition: background .2s ease, opacity .2s ease;
+    }
+
+    .menu a:hover {
+      opacity: 1;
+      background: rgba(255, 255, 255, .06);
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 11px 14px;
+      border-radius: 12px;
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, .04);
+      color: var(--text);
+      font-weight: 800;
+      gap: 10px;
+      transition: transform .08s ease, background .2s ease, border-color .2s ease;
+      white-space: nowrap;
+      letter-spacing: .06px;
+      font-family: var(--font-body);
+    }
+
+    .btn:hover {
+      background: rgba(255, 255, 255, .07);
+      border-color: rgba(244, 244, 246, .18);
+    }
+
+    .btn:active {
+      transform: translateY(1px);
+    }
+
+    .btn.primary {
+      border-color: rgba(218, 170, 73, .40);
+      background: linear-gradient(180deg, rgba(218, 170, 73, .16), rgba(218, 170, 73, .06));
+      box-shadow: 0 10px 25px rgba(218, 170, 73, .16);
+    }
+
+    .btn.primary:hover {
+      border-color: rgba(218, 170, 73, .55);
+      background: linear-gradient(180deg, rgba(218, 170, 73, .20), rgba(218, 170, 73, .07));
+    }
+
+    /* Mobile menu */
+    .navToggle {
+      display: none;
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      border: 1px solid rgba(244, 244, 246, .14);
+      background: rgba(255, 255, 255, .04);
+      color: var(--text);
+      font-size: 18px;
+    }
+
+    @media (max-width: 860px) {
+      .menu {
+        position: fixed;
+        top: 70px;
+        right: calc(var(--pad));
+        width: min(280px, calc(100% - (var(--pad) * 2)));
+        background: rgba(18, 19, 26, .96);
+        border: 1px solid rgba(244, 244, 246, .12);
+        border-radius: 16px;
+        padding: 10px;
+        box-shadow: var(--shadow);
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .menu.open {
+        display: flex;
+      }
+
+      .menu a {
+        padding: 12px 12px;
+      }
+
+      .navToggle {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+    /* Sections */
+    .section {
+      padding: 26px 0;
+    }
+
+    .section h2 {
+      margin: 0 0 12px;
+      font-size: 22px;
+      font-family: var(--font-title);
+      letter-spacing: .2px;
+    }
+
+    .muted {
+      color: var(--muted);
+    }
+
+    .panel {
+      border: 1px solid rgba(244, 244, 246, .10);
+      background: rgba(15, 16, 21, .70);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      min-width: 0;
+    }
+
+    /* Hero */
+    .hero {
+      padding: 30px 0 22px;
+    }
+
+    .heroGrid {
+      display: grid;
+      grid-template-columns: 1.3fr .7fr;
+      gap: 14px;
+      align-items: stretch;
+    }
+
+    @media (max-width: 900px) {
+      .heroGrid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .heroMain {
+      padding: 22px;
+      position: relative;
+      isolation: isolate;
+    }
+
+    .heroMain::before {
+      content: "";
+      position: absolute;
+      inset: -1px;
+      border-radius: var(--radius);
+      background:
+        radial-gradient(650px 420px at 15% 10%, rgba(218, 170, 73, .22), transparent 60%),
+        radial-gradient(520px 380px at 85% 30%, rgba(218, 170, 73, .10), transparent 55%);
+      opacity: .9;
+      z-index: -1;
+    }
+
+    .kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 8px 10px;
+      border: 1px solid rgba(218, 170, 73, .35);
+      border-radius: 999px;
+      background: rgba(218, 170, 73, .08);
+      color: rgba(244, 244, 246, .95);
+      font-weight: 900;
+      letter-spacing: .3px;
+      text-transform: uppercase;
+      font-size: 12px;
+      font-family: var(--font-body);
+    }
+
+    h1 {
+      margin: 12px 0 10px;
+      font-family: var(--font-title);
+      letter-spacing: .2px;
+      font-size: 32px;
+      line-height: 1.15;
+    }
+
+    .sub {
+      margin: 0 0 16px;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .ctaRow {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .badgeRow {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 14px;
+    }
+
+    .badge {
+      padding: 9px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(244, 244, 246, .12);
+      background: rgba(255, 255, 255, .04);
+      color: rgba(244, 244, 246, .92);
+      font-weight: 800;
+      font-size: 12px;
+      font-family: var(--font-body);
+    }
+
+    /* Side panel */
+    .heroSide {
+      padding: 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .heroSide h2 {
+      margin: 0 0 6px;
+      font-size: 16px;
+      font-family: var(--font-title);
+      letter-spacing: .2px;
+    }
+
+    .heroSide p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .heroSide .callout {
+      border: 1px solid rgba(218, 170, 73, .25);
+      background: rgba(218, 170, 73, .06);
+      padding: 12px;
+      border-radius: 14px;
+    }
+
+    .grid3 {
+      display: grid;
+      gap: 12px;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    }
+
+    .steps {
+      display: grid;
+      gap: 12px;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      align-items: stretch;
+    }
+
+    .card {
+      padding: 16px;
+      border: 1px solid rgba(244, 244, 246, .10);
+      background: rgba(18, 19, 26, .70);
+      border-radius: var(--radius);
+    }
+
+    .card h3 {
+      margin: 0 0 6px;
+      font-size: 16px;
+      font-family: var(--font-title);
+      letter-spacing: .2px;
+    }
+
+    .card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .planWrap {
+      display: grid;
+      gap: 12px;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      align-items: stretch;
+    }
+
+    .plan {
+      padding: 18px;
+      border: 1px solid rgba(244, 244, 246, .10);
+      background: rgba(18, 19, 26, .70);
+      border-radius: var(--radius);
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .plan strong {
+      font-family: var(--font-title);
+      letter-spacing: .2px;
+      font-size: 18px;
+    }
+
+    .plan ul {
+      margin: 0;
+      padding-left: 18px;
+      color: var(--muted);
+    }
+
+    .plan li {
+      margin: 6px 0;
+    }
+
+    .pill {
+      display: inline-flex;
+      width: 34px;
+      height: 34px;
+      border-radius: 10px;
+      align-items: center;
+      justify-content: center;
+      font-weight: 900;
+      background: rgba(218, 170, 73, .10);
+      border: 1px solid rgba(218, 170, 73, .32);
+      margin-bottom: 8px;
+      color: var(--text);
+      font-family: var(--font-body);
+    }
+
+    /* Footer */
+    .footer {
+      padding: 22px 0 30px;
+      border-top: 1px solid rgba(244, 244, 246, .08);
+      background: rgba(10, 10, 14, .55);
+    }
+
+    .footerGrid {
+      display: grid;
+      gap: 14px;
+      grid-template-columns: 1.2fr .8fr;
+      align-items: start;
+    }
+
+    @media (max-width: 900px) {
+      .footerGrid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .contactBox {
+      padding: 14px;
+      border-radius: var(--radius);
+      border: 1px solid rgba(244, 244, 246, .10);
+      background: rgba(18, 19, 26, .70);
+    }
+
+    .contactBox a {
+      display: block;
+      padding: 10px 0;
+      border-bottom: 1px dashed rgba(244, 244, 246, .10);
+      font-weight: 800;
+    }
+
+    .contactBox a:last-child {
+      border-bottom: none;
+    }
+
+    .contactBox span {
+      color: var(--muted);
+      font-weight: 600;
+    }
+
+    .small {
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    /* ============================
+       Instagram - Carrossel com blockquote (embed oficial)
+       ============================ */
+    .igHeader {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+    }
+
+    .igCarousel {
+      position: relative;
+      border: 1px solid rgba(244, 244, 246, .10);
+      background: rgba(18, 19, 26, .60);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .igTrack {
+      display: flex;
+      gap: 12px;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      padding: 12px;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: thin;
+      scrollbar-color: rgba(218, 170, 73, .45) rgba(255, 255, 255, .06);
+    }
+
+    .igTrack::-webkit-scrollbar {
+      height: 10px;
+    }
+
+    .igTrack::-webkit-scrollbar-track {
+      background: rgba(255, 255, 255, .06);
+      border-radius: 999px;
+    }
+
+    .igTrack::-webkit-scrollbar-thumb {
+      background: rgba(218, 170, 73, .45);
+      border-radius: 999px;
+    }
+
+    .igSlide {
+      flex: 0 0 var(--ig-slide-w);
+      scroll-snap-align: start;
+      border-radius: 16px;
+      border: 1px solid rgba(244, 244, 246, .10);
+      background: rgba(15, 16, 21, .55);
+      overflow: hidden;
+      position: relative;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, .25);
+      max-height: var(--ig-max-h);
+      /* <<< mantém minimalista */
+    }
+
+    @media (max-width: 520px) {
+      .igSlide {
+        flex-basis: min(var(--ig-slide-w-sm), 85vw);
+      }
+    }
+
+    /* Fade discreto no fim (indica que está “cortado”) */
+    .igSlide::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 64px;
+      background: linear-gradient(to bottom, rgba(7, 7, 10, 0), rgba(7, 7, 10, .78));
+      pointer-events: none;
+    }
+
+    /* Domando o embed do Instagram (mesmo que você cole o blockquote enorme) */
+    .igSlide blockquote.instagram-media {
+      margin: 0 !important;
+      width: 100% !important;
+      max-width: 100% !important;
+      min-width: 0 !important;
+
+      /* neutraliza o estilo inline “gigante” */
+      background: transparent !important;
+      border: 0 !important;
+      border-radius: 0 !important;
+      box-shadow: none !important;
+    }
+
+    /* iframe gerado pelo embed.js */
+    .igSlide iframe {
+      width: 100% !important;
+      border: 0 !important;
+      border-radius: 0 !important;
+      background: transparent !important;
+    }
+
+    .igNav {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 44px;
+      height: 44px;
+      border-radius: 14px;
+      border: 1px solid rgba(244, 244, 246, .14);
+      background: rgba(7, 7, 10, .55);
+      color: var(--text);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      z-index: 2;
+    }
+
+    .igNav:hover {
+      border-color: rgba(218, 170, 73, .40);
+    }
+
+    .igNav:active {
+      transform: translateY(-50%) translateY(1px);
+    }
+
+    @media (min-width: 860px) {
+      .igNav {
+        display: inline-flex;
+      }
+
+      .igNav.prev {
+        left: 10px;
+      }
+
+      .igNav.next {
+        right: 10px;
+      }
+    }
+
+    .igHint {
+      margin-top: 10px;
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    .igEmpty {
+      border: 1px dashed rgba(244, 244, 246, .18);
+      background: rgba(18, 19, 26, .45);
+      border-radius: var(--radius);
+      padding: 14px;
+      color: var(--muted);
+      margin-top: 10px;
+    }
+
+    .igEmpty code {
+      color: var(--text);
+      background: rgba(255, 255, 255, .06);
+      padding: 2px 6px;
+      border-radius: 8px;
+      border: 1px solid rgba(244, 244, 246, .12);
+    }
+
+    /* ============================
+   Tecnologias - ticker minimalista (logos rodando)
+   ============================ */
+    :root {
+      --tech-speed: 36s;
+      /* menor = mais rápido | maior = mais lento */
+    }
+
+    .techHeader {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+    }
+
+    .techMarquee {
+      position: relative;
+      border: 1px solid rgba(244, 244, 246, .10);
+      background: rgba(18, 19, 26, .60);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    /* fade nas bordas (fica bem minimalista e elegante) */
+    .techMarquee::before,
+    .techMarquee::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 64px;
+      pointer-events: none;
+      z-index: 2;
+    }
+
+    .techMarquee::before {
+      left: 0;
+      background: linear-gradient(to right, rgba(7, 7, 10, .92), rgba(7, 7, 10, 0));
+    }
+
+    .techMarquee::after {
+      right: 0;
+      background: linear-gradient(to left, rgba(7, 7, 10, .92), rgba(7, 7, 10, 0));
+    }
+
+    .techTrack {
+      display: flex;
+      width: max-content;
+      gap: 0;
+      padding: 14px 0;
+      will-change: transform;
+      animation: techScroll var(--tech-speed) linear infinite;
+    }
+
+    /* pausa quando passa o mouse (desktop) */
+    .techMarquee:hover .techTrack {
+      animation-play-state: paused;
+    }
+
+    .techGroup {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      padding: 0 22px;
+    }
+
+    .techLogo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 46px;
+      padding: 10px 16px;
+      border-radius: 14px;
+      border: 1px solid rgba(244, 244, 246, .10);
+      background: rgba(15, 16, 21, .50);
+      flex: 0 0 auto;
+    }
+
+    .techLogo img {
+      height: 24px;
+      /* mantém tudo alinhado */
+      width: auto;
+      /* preserva proporção (não distorce) */
+      max-width: 150px;
+      object-fit: contain;
+      opacity: .92;
+      filter: saturate(1.02) contrast(1.02);
+    }
+
+    .techNote {
+      margin: 10px 0 0;
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    @keyframes techScroll {
+      from {
+        transform: translateX(0);
+      }
+
+      to {
+        transform: translateX(-50%);
+      }
+
+      /* funciona porque duplicamos o conteúdo via JS */
+    }
+
+    /* acessibilidade: respeita "reduzir movimento" */
+    @media (prefers-reduced-motion: reduce) {
+      .techTrack {
+        animation: none;
+      }
+    }
+
+    /* ============================
+   Ícones discretos nos títulos
+   (sem alterar estrutura)
+   ============================ */
+    .h3i,
+    .h2i {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .ico {
+      width: 14px;
+      height: 14px;
+      flex: 0 0 14px;
+      color: rgba(218, 170, 73, .92);
+      opacity: .85;
+      transform: translateY(1px);
+    }
+
+    /* opcional: deixa ainda mais discreto no mobile */
+    @media (max-width: 520px) {
+      .ico {
+        opacity: .75;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <!-- Ícones (sprite SVG) - discreto e sem libs externas -->
+  <svg xmlns="http://www.w3.org/2000/svg" style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true">
+    <symbol id="i-life" viewBox="0 0 24 24">
+      <path fill="currentColor"
+        d="M12 2a10 10 0 1 0 .001 20.001A10 10 0 0 0 12 2zm1 15h-2v-2h2v2zm1.07-7.75-.9.92A1.5 1.5 0 0 0 13 12v1h-2v-.5a3 3 0 0 1 .88-2.12l1.24-1.26a1.5 1.5 0 1 0-2.56-1.06H8.5a3.5 3.5 0 1 1 5.57 2.19z" />
+    </symbol>
+    <symbol id="i-wifi" viewBox="0 0 24 24">
+      <path fill="currentColor"
+        d="M12 18.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3Zm-6.2-4.3 1.4 1.4a6.8 6.8 0 0 1 9.6 0l1.4-1.4a8.8 8.8 0 0 0-12.4 0Zm-3.1-3.1 1.4 1.4a11.2 11.2 0 0 1 15.8 0l1.4-1.4a13.2 13.2 0 0 0-18.6 0Z" />
+    </symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M12 2 4 5v6c0 5 3.5 9.74 8 11 4.5-1.26 8-6 8-11V5z" />
+    </symbol>
+    <symbol id="i-database" viewBox="0 0 24 24">
+      <path fill="currentColor"
+        d="M12 2C7.58 2 4 3.79 4 6v12c0 2.21 3.58 4 8 4s8-1.79 8-4V6c0-2.21-3.58-4-8-4Zm0 2c3.87 0 6 .98 6 2s-2.13 2-6 2-6-.98-6-2 2.13-2 6-2Zm0 16c-3.87 0-6-.98-6-2v-2c1.36.99 3.74 1.5 6 1.5s4.64-.51 6-1.5v2c0 1.02-2.13 2-6 2Zm0-6c-3.87 0-6-.98-6-2V10c1.36.99 3.74 1.5 6 1.5s4.64-.51 6-1.5v2c0 1.02-2.13 2-6 2Z" />
+    </symbol>
+    <symbol id="i-server" viewBox="0 0 24 24">
+      <path fill="currentColor"
+        d="M4 4h16v6H4V4zm0 10h16v6H4v-6zm2 1v4h12v-4H6zm0-10v4h12V5H6zm1 2h2v2H7V7zm0 10h2v2H7v-2z" />
+    </symbol>
+    <symbol id="i-lightbulb" viewBox="0 0 24 24">
+      <path fill="currentColor"
+        d="M9 21h6v-1H9v1zm3-20a7 7 0 0 0-4 12.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-3.26A7 7 0 0 0 12 1zm3 11.47-.5.37V16H9.5v-3.16l-.5-.37A5 5 0 1 1 15 12.47z" />
+    </symbol>
+    <symbol id="i-search" viewBox="0 0 24 24">
+      <path fill="currentColor"
+        d="M10 2a8 8 0 1 0 5.29 14.06l4.32 4.32 1.41-1.41-4.32-4.32A8 8 0 0 0 10 2Zm0 2a6 6 0 1 1 0 12A6 6 0 0 1 10 4Z" />
+    </symbol>
+    <symbol id="i-list-check" viewBox="0 0 24 24">
+      <path fill="currentColor"
+        d="M9 6h13v2H9V6Zm0 5h13v2H9v-2Zm0 5h13v2H9v-2ZM2.5 6.5 4 8l3-3-1.4-1.4L4 5.2 3.9 5.1 2.5 6.5Zm0 5L4 13l3-3-1.4-1.4L4 10.2l-.1-.1-1.4 1.4Zm0 5L4 18l3-3-1.4-1.4L4 15.2l-.1-.1-1.4 1.4Z" />
+    </symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24">
+      <path fill="currentColor"
+        d="M12 1.75A10.25 10.25 0 1 0 22.25 12 10.26 10.26 0 0 0 12 1.75Zm0 18.5A8.25 8.25 0 1 1 20.25 12 8.26 8.26 0 0 1 12 20.25ZM12.75 7h-1.5v6l5.25 3.15.75-1.23-4.5-2.67Z" />
+    </symbol>
+  </svg>
+
+
+  <!-- Topo -->
+  <header class="topbar" role="banner">
+    <div class="wrap">
+      <div class="nav">
+        <a class="brand" href="#topo" aria-label="Ir para o topo">
+          <img class="logoImg" src="https://www.rochatech.net.br/assets/images/logo.png" alt="Logo RochaTech"
+            loading="eager" fetchpriority="high" />
+          <span>
+            RochaTech
+            <small>TI Gerenciada • Proatividade • Resposta rápida</small>
+          </span>
+        </a>
+
+        <button class="navToggle" id="navToggle" type="button" aria-label="Abrir menu" aria-expanded="false"
+          aria-controls="primary-menu">
+          ☰
+        </button>
+
+        <nav class="menu" id="primary-menu" aria-label="Menu principal">
+          <a href="#servicos">Serviços</a>
+          <a href="#como">Como funciona</a>
+          <a href="#planos">Planos</a>
+          <a href="#contato">Contato</a>
+        </nav>
+
+        <a class="btn primary"
+          href="https://wa.me/5541987151231?text=Ol%C3%A1!%20Quero%20um%20diagn%C3%B3stico%20inicial%20gratuito%20de%20TI%20para%20minha%20empresa."
+          target="_blank" rel="noopener" aria-label="Chamar no WhatsApp">
+          WhatsApp
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="conteudo">
+
+    <!-- Hero -->
+    <section class="hero" id="topo" aria-label="Apresentação">
+      <div class="wrap">
+        <div class="heroGrid">
+          <div class="panel heroMain">
+            <div class="kicker">MSP • TI Gerenciada para PMEs</div>
+            <h1>TI proativa com resposta rápida a incidentes.</h1>
+            <p class="sub">
+              <strong>Proatividade e resposta rápida a incidentes.</strong>
+              Suporte, Redes, Firewall e Backup com SLA para empresas de <strong>1 a 100 usuários</strong>.
+            </p>
+
+            <div class="ctaRow">
+              <a class="btn primary"
+                href="https://wa.me/5541987151231?text=Ol%C3%A1!%20Quero%20um%20diagn%C3%B3stico%20inicial%20gratuito%20de%20TI%20para%20minha%20empresa."
+                target="_blank" rel="noopener">
+                Diagnóstico gratuito
+              </a>
+              <a class="btn" href="#planos">Ver planos</a>
+              <a class="btn" href="#servicos">O que fazemos</a>
+            </div>
+
+            <div class="badgeRow" aria-label="Destaques">
+              <div class="badge">SLA e padronização</div>
+              <div class="badge">Atendimento Brasil</div>
+              <div class="badge">Foco em segurança</div>
+            </div>
+          </div>
+
+          <aside class="panel heroSide" aria-label="Diferenciais">
+            <div>
+              <h2>O que você ganha</h2>
+              <p>Menos incidentes, mais previsibilidade e segurança para o seu negócio.</p>
+            </div>
+
+            <div class="callout">
+              <h2>Proatividade</h2>
+              <p>Monitoramento, rotina e melhorias contínuas para evitar recorrência.</p>
+            </div>
+
+            <div class="callout">
+              <h2>Resposta rápida</h2>
+              <p>Prioridade para incidentes críticos e comunicação clara.</p>
+            </div>
+
+            <div class="callout">
+              <h2>Segurança</h2>
+              <p>MFA, boas práticas, firewall/VPN e backup conforme plano.</p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Serviços -->
+    <section class="section" id="servicos" aria-label="Serviços">
+      <div class="wrap">
+        <h2>Serviços</h2>
+        <p class="muted">Contrato mensal (recorrência) + projetos sob demanda.</p>
+
+        <div class="grid3" role="list">
+          <div class="card" role="listitem">
+            <h3 class="h3i"><svg class="ico" aria-hidden="true">
+                <use href="#i-life"></use>
+              </svg>Suporte &amp; Incidentes</h3>
+            <p>Resposta rápida a incidentes, atendimento remoto/presencial e padronização para reduzir recorrência.</p>
+          </div>
+          <div class="card" role="listitem">
+            <h3 class="h3i"><svg class="ico" aria-hidden="true">
+                <use href="#i-wifi"></use>
+              </svg>Redes &amp; Wi-Fi</h3>
+
+            <p>Rede estável, segmentação, Wi-Fi corporativo e melhoria de performance.</p>
+          </div>
+          <div class="card" role="listitem">
+
+            <h3 class="h3i"><svg class="ico" aria-hidden="true">
+                <use href="#i-shield"></use>
+              </svg>Firewall &amp; VPN</h3>
+            <p>Gestão e boas práticas para acesso remoto seguro e proteção de perímetro.</p>
+          </div>
+          <div class="card" role="listitem">
+            <h3 class="h3i"><svg class="ico" aria-hidden="true">
+                <use href="#i-database"></use>
+              </svg>Backup &amp; Continuidade</h3>
+            <p>Rotina, alertas, verificação e testes de restauração (conforme plano).</p>
+          </div>
+          <div class="card" role="listitem">
+            <h3 class="h3i"><svg class="ico" aria-hidden="true">
+                <use href="#i-server"></use>
+              </svg>Infra &amp; Servidores</h3>
+            <p>Windows/Linux, virtualização, storage, inventário e boas práticas.</p>
+          </div>
+          <div class="card" role="listitem">
+            <h3 class="h3i"><svg class="ico" aria-hidden="true">
+                <use href="#i-lightbulb"></use>
+              </svg>Consultoria</h3>
+            <p>Plano de melhorias, roadmap e projetos: M365, migrações e upgrades.</p>
+          </div>
+        </div>
+        <!-- Projetos sob demanda (detalhamento) -->
+        <div class="panel" style="margin-top:14px; padding:18px;">
+          <h3 style="margin:0 0 8px; font-size:18px; font-family: var(--font-title); letter-spacing:.2px;">
+            Projetos de TI (sob demanda)
+          </h3>
+          <p class="muted" style="margin:0 0 12px;">
+            Quando você precisa evoluir o ambiente, executamos projetos pontuais com escopo, cronograma e entrega
+            documentada.
+          </p>
+
+          <div class="grid3" role="list">
+            <div class="card" role="listitem">
+              <h3 class="h3i"><svg class="ico" aria-hidden="true">
+                  <use href="#i-wifi"></use>
+                </svg>Redes, Wi-Fi e Cabeamento</h3>
+              <ul style="margin:8px 0 0; padding-left:18px; color: var(--muted);">
+                <li>Cabeamento estruturado</li>
+                <li>Rede e Wi-Fi corporativo</li>
+                <li>Link Aggregation (LACP)</li>
+                <li>DNS gerenciado (redundância/monitoramento)</li>
+              </ul>
+            </div>
+
+            <div class="card" role="listitem">
+              <h3 class="h3i"><svg class="ico" aria-hidden="true">
+                  <use href="#i-database"></use>
+                </svg>Backup &amp; Continuidade</h3>
+              <ul style="margin:8px 0 0; padding-left:18px; color: var(--muted);">
+                <li>Backups sob medida</li>
+                <li>Estratégia 3-2-1 e retenção</li>
+                <li>Testes de restauração</li>
+                <li>HA / continuidade (quando aplicável)</li>
+              </ul>
+            </div>
+
+            <div class="card" role="listitem">
+              <h3 class="h3i"><svg class="ico" aria-hidden="true">
+                  <use href="#i-server"></use>
+                </svg>Servidores &amp; Arquivos</h3>
+              <ul style="margin:8px 0 0; padding-left:18px; color: var(--muted);">
+                <li>Servidores sob medida</li>
+                <li>Virtualização / storage</li>
+                <li>Servidor de arquivos</li>
+                <li>Padronização e documentação</li>
+              </ul>
+            </div>
+
+            <div class="card" role="listitem">
+              <h3 class="h3i"><svg class="ico" aria-hidden="true">
+                  <use href="#i-lightbulb"></use>
+                </svg>E-mail &amp; Nuvem</h3>
+              <ul style="margin:8px 0 0; padding-left:18px; color: var(--muted);">
+                <li>Sistema de e-mail corporativo (M365/Google)</li>
+                <li>Migração e configuração de domínio</li>
+                <li>Nuvem corporativa (Azure/AWS/Cloud)</li>
+                <li>Políticas e boas práticas</li>
+              </ul>
+            </div>
+
+            <div class="card" role="listitem">
+              <h3 class="h3i"><svg class="ico" aria-hidden="true">
+                  <use href="#i-shield"></use>
+                </svg>Segurança</h3>
+
+              <ul style="margin:8px 0 0; padding-left:18px; color: var(--muted);">
+                <li>Hardening e correções de risco</li>
+                <li>Firewall/VPN e segmentação</li>
+                <li>Testes de segurança (com autorização)</li>
+                <li>Gestão de vulnerabilidades</li>
+              </ul>
+            </div>
+
+            <div class="card" role="listitem">
+              <h3 class="h3i"><svg class="ico" aria-hidden="true">
+                  <use href="#i-life"></use>
+                </svg>Infra física &amp; Segurança eletrônica</h3>
+              <ul style="margin:8px 0 0; padding-left:18px; color: var(--muted);">
+                <li>Elétrica para TI e nobreaks</li>
+                <li>Rack, organização e cable management</li>
+                <li>CFTV e controle de acesso</li>
+                <li>Sistemas de alarmes</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="ctaRow" style="margin-top:12px;">
+            <a class="btn primary"
+              href="https://wa.me/5541987151231?text=Ol%C3%A1!%20Quero%20um%20projeto%20de%20TI%20(%C3%A1rea:%20Redes/Backup/Servidor/Nuvem/Seguran%C3%A7a).%20Podemos%20falar%20sobre%20escopo%20e%20prazo%3F"
+              target="_blank" rel="noopener">
+              Quero um projeto
+            </a>
+            <span class="small" style="align-self:center;">Projetos com escopo fechado e entrega documentada.</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Como funciona -->
+    <section class="section" id="como" aria-label="Como funciona">
+      <div class="wrap">
+        <h2>Como funciona</h2>
+        <p class="muted">Um processo simples para organizar e estabilizar sua TI.</p>
+
+        <div class="steps">
+          <div class="card">
+            <div class="pill">1</div>
+            <h3>Diagnóstico</h3>
+            <p>Levantamento de ambiente, dores e prioridades. Inventário e riscos principais.</p>
+          </div>
+
+          <div class="card">
+            <div class="pill">2</div>
+            <h3>Padronização</h3>
+            <p>Boas práticas, organização de acesso, documentação e ajustes rápidos para reduzir incidentes.</p>
+          </div>
+
+          <div class="card">
+            <div class="pill">3</div>
+            <h3>Proatividade</h3>
+            <p>Rotina de monitoramento, prevenção, atualizações e melhoria contínua conforme plano.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Planos -->
+    <section class="section" id="planos" aria-label="Planos">
+      <div class="wrap">
+        <h2>Planos</h2>
+        <p class="muted">Planos mensais por recorrência. Ajustamos conforme seu ambiente e necessidade.</p>
+
+        <div class="planWrap">
+          <div class="plan">
+            <strong>Essencial</strong>
+            <div class="muted">Para quem precisa organizar e estabilizar a TI.</div>
+            <ul>
+              <li>Suporte e chamados</li>
+              <li>Padronização básica</li>
+              <li>Inventário + documentação</li>
+              <li>Rotina preventiva</li>
+            </ul>
+            <a class="btn"
+              href="https://wa.me/5541987151231?text=Quero%20um%20or%C3%A7amento%20do%20Plano%20Essencial.%20Temos%20X%20usu%C3%A1rios."
+              target="_blank" rel="noopener">Pedir orçamento</a>
+          </div>
+
+          <div class="plan">
+            <strong>Segurança</strong>
+            <div class="muted">Foco em proteção e continuidade. Ideal para quem quer blindar a operação.</div>
+            <ul>
+              <li>Tudo do Essencial</li>
+              <li>Firewall/VPN gerenciado</li>
+              <li>Backup gerenciado com alertas</li>
+              <li>Boas práticas (MFA/políticas básicas)</li>
+            </ul>
+            <a class="btn primary"
+              href="https://wa.me/5541987151231?text=Quero%20um%20or%C3%A7amento%20do%20Plano%20Seguran%C3%A7a.%20Temos%20X%20usu%C3%A1rios."
+              target="_blank" rel="noopener">Pedir orçamento</a>
+          </div>
+
+          <div class="plan">
+            <strong>Premium</strong>
+            <div class="muted">Para quem precisa de continuidade e SLA melhor.</div>
+            <ul>
+              <li>Tudo do Segurança</li>
+              <li>Teste de restauração (mensal/trimestral)</li>
+              <li>Relatório executivo</li>
+              <li>SLA melhor + visitas preventivas</li>
+            </ul>
+            <a class="btn"
+              href="https://wa.me/5541987151231?text=Quero%20um%20or%C3%A7amento%20do%20Plano%20Premium.%20Temos%20X%20usu%C3%A1rios."
+              target="_blank" rel="noopener">Pedir orçamento</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tecnologias -->
+    <section class="section" id="tecnologias" aria-label="Tecnologias">
+      <div class="wrap">
+        <div class="techHeader">
+          <div>
+            <h2>Tecnologias</h2>
+            <p class="muted">Soluções que usamos no dia a dia.</p>
+          </div>
+        </div>
+
+        <div class="techMarquee" aria-label="Marcas e tecnologias (carrossel contínuo)">
+          <div class="techTrack" id="techTrack">
+            <!-- ✅ Edite APENAS este grupo: adicione/remova logos aqui -->
+            <div class="techGroup" id="techGroup">
+              <div class="techLogo">
+                <img src="assets/images/tecnologias/hpe.png" alt="HPE" loading="lazy" decoding="async">
+              </div>
+              <div class="techLogo">
+                <img src="assets/images/tecnologias/datacom.png" alt="DATACOM" loading="lazy" decoding="async">
+              </div>
+              <div class="techLogo">
+                <img src="assets/images/tecnologias/dell.png" alt="Dell" loading="lazy" decoding="async">
+              </div>
+              <div class="techLogo">
+                <img src="assets/images/tecnologias/ubiquiti.png" alt="Ubiquiti" loading="lazy" decoding="async">
+              </div>
+              <div class="techLogo">
+                <img src="assets/images/tecnologias/veeam.png" alt="Veeam" loading="lazy" decoding="async">
+              </div>
+              <div class="techLogo">
+                <img src="assets/images/tecnologias/acronis.png" alt="Acronis" loading="lazy" decoding="async">
+              </div>
+              <div class="techLogo">
+                <img src="assets/images/tecnologias/lenovo.png" alt="Lenovo" loading="lazy" decoding="async">
+              </div>
+              <div class="techLogo">
+                <img src="assets/images/tecnologias/bacula.png" alt="Bacula" loading="lazy" decoding="async">
+              </div>
+              <div class="techLogo">
+                <img src="assets/images/tecnologias/linux.png" alt="Linux" loading="lazy" decoding="async">
+              </div>
+              <div class="techLogo">
+                <img src="assets/images/tecnologias/microsoft.png" alt="Microsoft" loading="lazy" decoding="async">
+              </div>
+              <div class="techLogo">
+                <img src="assets/images/tecnologias/kingston.png" alt="Kingston" loading="lazy" decoding="async">
+              </div>
+              <div class="techLogo">
+                <img src="assets/images/tecnologias/wd.png" alt="Wester Digital" loading="lazy" decoding="async">
+              </div>
+              <div class="techLogo">
+                <img src="assets/images/tecnologias/hyperv.png" alt="Hyper-V Server" loading="lazy" decoding="async">
+              </div>
+              <div class="techLogo">
+                <img src="assets/images/tecnologias/proxmox.png" alt="Proxmox VE" loading="lazy" decoding="async">
+              </div>
+              <div class="techLogo">
+                <img src="assets/images/tecnologias/digitalocean.png" alt="Digital Ocean" loading="lazy"
+                  decoding="async">
+              </div>
+              <div class="techLogo">
+                <img src="assets/images/tecnologias/pfsense.png" alt="PfSense" loading="lazy" decoding="async">
+              </div>
+              <div class="techLogo">
+                <img src="assets/images/tecnologias/opnsense.png" alt="OPNSense" loading="lazy" decoding="async">
+              </div>
+              <div class="techLogo">
+                <img src="assets/images/tecnologias/mikrotik.png" alt="MikroTik" loading="lazy" decoding="async">
+              </div>
+              <div class="techLogo">
+                <img src="assets/images/tecnologias/winserver.png" alt="Windows Server" loading="lazy" decoding="async">
+              </div>
+              <div class="techLogo">
+                <img src="assets/images/tecnologias/samba.png" alt="Samba" loading="lazy" decoding="async">
+              </div>
+              <div class="techLogo">
+                <img src="assets/images/tecnologias/azure.png" alt="Microsoft Azure" loading="lazy" decoding="async">
+              </div>
+              <div class="techLogo">
+                <img src="assets/images/tecnologias/tplink.png" alt="TPLink" loading="lazy" decoding="async">
+              </div>
+              <div class="techLogo">
+                <img src="assets/images/tecnologias/intelbras.png" alt="Intelbras" loading="lazy" decoding="async">
+              </div>
+              <div class="techLogo">
+                <img src="assets/images/tecnologias/brdigital.png" alt="BRDigital" loading="lazy" decoding="async">
+              </div>
+              <div class="techLogo">
+                <img src="assets/images/tecnologias/samsung.png" alt="Samsung" loading="lazy" decoding="async">
+              </div>
+              <div class="techLogo">
+                <img src="assets/images/tecnologias/hp.png" alt="HP" loading="lazy" decoding="async">
+              </div>
+              <div class="techLogo">
+                <img src="assets/images/tecnologias/furukawa.png" alt="Furukawa" loading="lazy" decoding="async">
+              </div>
+              <div class="techLogo">
+                <img src="assets/images/tecnologias/apc.png" alt="APC" loading="lazy" decoding="async">
+              </div>
+              <div class="techLogo">
+                <img src="assets/images/tecnologias/kaspersky.png" alt="Kaspersky" loading="lazy" decoding="async">
+              </div>
+              <div class="techLogo">
+                <img src="assets/images/tecnologias/bitdefender.png" alt="BitDefender" loading="lazy" decoding="async">
+              </div>
+              <div class="techLogo">
+                <img src="assets/images/tecnologias/purestorage.png" alt="PureStorage" loading="lazy" decoding="async">
+              </div>
+              <div class="techLogo">
+                <img src="assets/images/tecnologias/fortinet.png" alt="Fortinet" loading="lazy" decoding="async">
+              </div>
+
+              <!-- Exemplo de mais logos (coloque quando tiver os arquivos) -->
+              <!--
+          <div class="techLogo"><img src="assets/tech/microsoft.svg" alt="Microsoft" loading="lazy" decoding="async"></div>
+          <div class="techLogo"><img src="assets/tech/fortinet.svg" alt="Fortinet" loading="lazy" decoding="async"></div>
+          <div class="techLogo"><img src="assets/tech/sophos.svg" alt="Sophos" loading="lazy" decoding="async"></div>
+          -->
+            </div>
+          </div>
+        </div>
+
+        <p class="techNote">*Marcas e logos pertencem aos respectivos proprietários.</p>
+      </div>
+    </section>
+
+
+    <!-- Instagram (blockquote carousel) -->
+    <section class="section" id="instagram" aria-label="Instagram">
+      <div class="wrap">
+        <div class="igHeader">
+          <div>
+            <h2>Instagram</h2>
+          </div>
+        </div>
+
+        <div class="igCarousel" aria-roledescription="carousel" aria-label="Carrossel de publicações do Instagram">
+          <button class="igNav prev" type="button" aria-label="Voltar" id="igPrev">‹</button>
+
+          <div class="igTrack" id="igTrack" tabindex="0" aria-label="Lista de publicações">
+
+            <!-- ✅ COMO ADICIONAR: duplique um bloco igSlide e cole seu <blockquote> dentro -->
+            <!-- Você pode colar o blockquote “curto” (recomendado): -->
+            <div class="igSlide">
+              <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DS6sW2CjQfI/"
+                data-instgrm-version="14">
+              </blockquote>
+            </div>
+
+            <!-- OU colar o blockquote “completo” do Instagram (aquele enorme) também funciona:
+                 (evite colar o <script> junto — o script deve ficar só uma vez no final da página) -->
+
+            <!-- Exemplo de segundo item (troque pelo seu post): -->
+            <div class="igSlide">
+              <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DTBiiAMke2O/"
+                data-instgrm-version="14">
+              </blockquote>
+            </div>
+
+            <div class="igSlide">
+              <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DTE4Wh9DV5u/"
+                data-instgrm-version="14">
+              </blockquote>
+            </div>
+
+            <div class="igSlide">
+              <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DTFDlzWjS4e/"
+                data-instgrm-version="14">
+              </blockquote>
+            </div>
+
+          </div>
+
+          <button class="igNav next" type="button" aria-label="Avançar" id="igNext">›</button>
+        </div>
+
+        <div class="igHint">Backstage, boas práticas e novidades de TI.</div>
+
+        <noscript>
+          <p class="muted">Para ver as publicações, acesse o perfil no Instagram.</p>
+        </noscript>
+      </div>
+    </section>
+
+    <!-- Rodapé / Contato -->
+    <footer class="footer" id="contato" aria-label="Contato">
+      <div class="wrap">
+        <div class="footerGrid">
+          <div>
+            <h2 style="margin:0 0 8px; font-family: var(--font-title);">RochaTech</h2>
+            <p class="muted" style="margin:0 0 12px">
+              TI Gerenciada para pequenas e médias empresas: suporte, redes, firewall e backup com
+              <strong>proatividade</strong>
+              e <strong>resposta rápida a incidentes</strong>. Atendimento remoto para todo o Brasil.
+            </p>
+            <p class="small">
+              © <span id="year"></span> RochaTech • Base em Florianópolis/SC • Atendimento Brasil
+            </p>
+          </div>
+
+          <address class="contactBox" style="font-style: normal;">
+            <a href="https://wa.me/5541987151231" target="_blank" rel="noopener">
+              WhatsApp <span>— +55 41 98715-1231</span>
+            </a>
+            <a href="mailto:comercial@rochatech.net.br">
+              E-mail <span>— comercial@rochatech.net.br</span>
+            </a>
+            <a href="https://www.instagram.com/rochatech.net.br/" target="_blank" rel="noopener me">
+              Instagram <span>— @rochatech.net.br</span>
+            </a>
+          </address>
+        </div>
+      </div>
+    </footer>
+
+  </main>
+
+  <script>
+    // Ano no rodapé
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Menu mobile (acessível)
+    const btn = document.getElementById("navToggle");
+    const menu = document.getElementById("primary-menu");
+
+    function setMenu(open) {
+      menu.classList.toggle("open", open);
+      btn.setAttribute("aria-expanded", String(open));
+    }
+
+    if (btn && menu) {
+      btn.addEventListener("click", () => setMenu(!menu.classList.contains("open")));
+      menu.querySelectorAll("a").forEach((a) => a.addEventListener("click", () => setMenu(false)));
+
+      document.addEventListener("click", (e) => {
+        const isClickInside = menu.contains(e.target) || btn.contains(e.target);
+        if (!isClickInside) setMenu(false);
+      });
+
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") setMenu(false);
+      });
+    }
+
+    /* ============================
+       Instagram: carrossel + embed.js (processa blockquotes)
+       ============================ */
+
+    // Troque pelo seu @ (sem @)
+    const instagramUsername = "rochatech.net.br";
+
+    // Atualiza links placeholder do perfil (menu/rodapé/botão)
+    function setInstagramProfileLink() {
+      if (!instagramUsername || instagramUsername === "rochatech.net.br") return;
+
+      const profileUrl = `https://www.instagram.com/${instagramUsername}/`;
+      const igProfileBtn = document.getElementById("igProfileBtn");
+      if (igProfileBtn) igProfileBtn.href = profileUrl;
+
+      document.querySelectorAll('a[href="https://www.instagram.com/rochatech.net.br/"]').forEach(a => {
+        a.href = profileUrl;
+      });
+
+      // Atualiza JSON-LD sameAs
+      const ld = document.querySelector('script[type="application/ld+json"]');
+      if (ld) {
+        try {
+          const data = JSON.parse(ld.textContent);
+          const sameAs = Array.isArray(data.sameAs) ? data.sameAs : [];
+          const cleaned = sameAs.filter(x => typeof x === "string" && !x.includes("instagram.com/rochatech.net.br"));
+          cleaned.push(profileUrl);
+          data.sameAs = cleaned;
+          ld.textContent = JSON.stringify(data, null, 2);
+        } catch (_) { }
+      }
+    }
+
+    // Carrossel (scroll-snap)
+    const igTrack = document.getElementById("igTrack");
+    const igPrev = document.getElementById("igPrev");
+    const igNext = document.getElementById("igNext");
+    const igSection = document.getElementById("instagram");
+
+    function scrollCarousel(dir) {
+      if (!igTrack) return;
+      const amount = Math.max(260, Math.round(igTrack.clientWidth * 0.85));
+      igTrack.scrollBy({ left: dir * amount, behavior: "smooth" });
+    }
+
+    if (igPrev) igPrev.addEventListener("click", () => scrollCarousel(-1));
+    if (igNext) igNext.addEventListener("click", () => scrollCarousel(1));
+
+    if (igTrack) {
+      igTrack.addEventListener("keydown", (e) => {
+        if (e.key === "ArrowLeft") scrollCarousel(-1);
+        if (e.key === "ArrowRight") scrollCarousel(1);
+      });
+    }
+
+    // Lazy-load do script do Instagram (melhor performance)
+    function loadInstagramEmbedScript() {
+      if (window.__igEmbedLoading) return window.__igEmbedLoading;
+
+      window.__igEmbedLoading = new Promise((resolve, reject) => {
+        // Se já existe, apenas processa
+        if (window.instgrm && window.instgrm.Embeds && window.instgrm.Embeds.process) {
+          window.instgrm.Embeds.process();
+          resolve();
+          return;
+        }
+
+        const s = document.createElement("script");
+        s.async = true;
+        s.src = "https://www.instagram.com/embed.js";
+        s.onload = () => {
+          try {
+            window.instgrm?.Embeds?.process?.();
+          } catch (_) { }
+          resolve();
+        };
+        s.onerror = reject;
+        document.body.appendChild(s);
+      });
+
+      return window.__igEmbedLoading;
+    }
+
+    // Init
+    setInstagramProfileLink();
+
+    // Só carrega o embed.js quando a seção estiver próxima (evita pesar o carregamento do site)
+    if (igSection) {
+      const io = new IntersectionObserver((entries) => {
+        if (entries.some(e => e.isIntersecting)) {
+          loadInstagramEmbedScript();
+          io.disconnect();
+        }
+      }, { root: null, rootMargin: "300px 0px", threshold: 0.01 });
+
+      io.observe(igSection);
+    }
+
+    // ============================
+    // Tecnologias: duplica logos para loop contínuo e suave
+    // ============================
+    function initTechMarquee() {
+      const track = document.getElementById("techTrack");
+      const group = document.getElementById("techGroup");
+      if (!track || !group) return;
+
+      // Evita duplicar duas vezes se você recarregar via hot-reload
+      if (track.dataset.cloned === "1") return;
+
+      // Clona 1x para permitir animação -50% (loop contínuo)
+      const clone = group.cloneNode(true);
+      clone.removeAttribute("id");
+      track.appendChild(clone);
+
+      track.dataset.cloned = "1";
+    }
+
+    // roda depois que imagens carregarem (mais estável)
+    window.addEventListener("load", initTechMarquee);
+
+  </script>
+</body>
+
+
+</html>
